@@ -1,0 +1,393 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1howto_1_1rsencode__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::howto::rsencode_impl</compoundname>
+    <basecompoundref refid="classgr_1_1howto_1_1rsencode" prot="public" virt="non-virtual">gr::howto::rsencode</basecompoundref>
+    <includes refid="rsencode__impl_8h" local="no">rsencode_impl.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809a" prot="private" static="no">
+        <name>POLY_ID</name>
+        <enumvalue id="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa4da36a6b01e1231807e10b4a20db5a7c" prot="private">
+          <name>ID_MSG_IN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa3054523e8fda610fd6860c34a237829b" prot="private">
+          <name>ID_MSG_OUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa5c62c70a8e9569d76dc84fcfcd497b73" prot="private">
+          <name>ID_GENERATOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aac158fac7264e5d202a3defac5a1c0d51" prot="private">
+          <name>ID_TPOLY1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa5d6eb34ebb7a04b19402f8f20cd6def4" prot="private">
+          <name>ID_TPOLY2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aabcd9b440b5206f43e6b587314c07fadb" prot="private">
+          <name>ID_MSG_E</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa7676b414076bbdd4f701ac6427b74dc9" prot="private">
+          <name>ID_TPOLY3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa7323dad6c0fbd5ef63a2c221562008d4" prot="private">
+          <name>ID_TPOLY4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa24f6ce12b5ee1d659db4cc6772a0c11a" prot="private">
+          <name>ID_SYNDROMES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa97589f666d4ae0677505e8ee36793422" prot="private">
+          <name>ID_FORNEY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aade25db1872486ef3e531daa5e6ff54b0" prot="private">
+          <name>ID_ERASURES_LOC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa076190aeedafc0c1293cc2d5f45e36b1" prot="private">
+          <name>ID_ERRORS_LOC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aafab8c25c57de3605c7afd108397a44f0" prot="private">
+          <name>ID_ERASURE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aaff8a1521bf3118617995652581e1d5ff" prot="private">
+          <name>ID_ERRORS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aaa2096d1c1886bd65a217c246a394bdaf" prot="private">
+          <name>ID_COEF_POS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aaeda5fa4f199925408521ebcb59777919" prot="private">
+          <name>ID_ERR_EVAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsencode_impl.h" line="43" column="1" bodyfile="/home/zhou/src/gr-howto/lib/rsencode_impl.h" bodystart="43" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1howto_1_1rsencode__impl_1a454671857a21078f451cfdc0766534d4" prot="private" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t gr::howto::rsencode_impl::msg_length</definition>
+        <argsstring></argsstring>
+        <name>msg_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsencode_impl.h" line="39" column="1" bodyfile="/home/zhou/src/gr-howto/lib/rsencode_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1howto_1_1rsencode__impl_1af123ca8510c82b8a0c312d3ebeb508b0" prot="private" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t gr::howto::rsencode_impl::ecc_length</definition>
+        <argsstring></argsstring>
+        <name>ecc_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsencode_impl.h" line="40" column="1" bodyfile="/home/zhou/src/gr-howto/lib/rsencode_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1howto_1_1rsencode__impl_1aeba4f92b275ccf81dad10c46bbe6cb45" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* gr::howto::rsencode_impl::src</definition>
+        <argsstring></argsstring>
+        <name>src</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsencode_impl.h" line="41" column="1" bodyfile="/home/zhou/src/gr-howto/lib/rsencode_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1howto_1_1rsencode__impl_1a2a83f3a8c032f15626845a61348ed494" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char gr::howto::rsencode_impl::dst[125]</definition>
+        <argsstring>[125]</argsstring>
+        <name>dst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsencode_impl.h" line="42" column="1" bodyfile="/home/zhou/src/gr-howto/lib/rsencode_impl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1howto_1_1rsencode__impl_1a52c5c5836cb23a1c3b31814ed243e02d" prot="private" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* gr::howto::rsencode_impl::memory</definition>
+        <argsstring></argsstring>
+        <name>memory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsencode_impl.h" line="69" column="1" bodyfile="/home/zhou/src/gr-howto/lib/rsencode_impl.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1howto_1_1rsencode__impl_1a3bc0065c7773d62da000c1fefeae57f0" prot="private" static="no" mutable="no">
+        <type>Poly</type>
+        <definition>Poly gr::howto::rsencode_impl::polynoms[MSG_CNT+POLY_CNT]</definition>
+        <argsstring>[MSG_CNT+POLY_CNT]</argsstring>
+        <name>polynoms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsencode_impl.h" line="70" column="1" bodyfile="/home/zhou/src/gr-howto/lib/rsencode_impl.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1howto_1_1rsencode__impl_1a504aac9a3e5e0d342e93e85e18a2ef15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::howto::rsencode_impl::rsencode_impl</definition>
+        <argsstring>(int msglen, int ecclen)</argsstring>
+        <name>rsencode_impl</name>
+        <param>
+          <type>int</type>
+          <declname>msglen</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ecclen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsencode_impl.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1howto_1_1rsencode__impl_1a42d65e24213923e76424705d1b3a090f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::howto::rsencode_impl::~rsencode_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~rsencode_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsencode_impl.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1howto_1_1rsencode__impl_1a036fd4242b48552cd241bd3532aeb0d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::howto::rsencode_impl::handle_fun</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>handle_fun</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsencode_impl.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1howto_1_1rsencode__impl_1a8b090e7e31610201cc85fe2cbc73c7bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::howto::rsencode_impl::Encode</definition>
+        <argsstring>(const void *src, void *dst)</argsstring>
+        <name>Encode</name>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsencode_impl.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1howto_1_1rsencode__impl_1ab8c8d351189c692a76d602fdf397505c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::howto::rsencode_impl::EncodeBlock</definition>
+        <argsstring>(const void *src, void *dst)</argsstring>
+        <name>EncodeBlock</name>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsencode_impl.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1howto_1_1rsencode__impl_1a41475e37dd3e1e642df4f1d7a8b933dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::howto::rsencode_impl::GeneratorPoly</definition>
+        <argsstring>()</argsstring>
+        <name>GeneratorPoly</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsencode_impl.h" line="79" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="17">
+        <label>gr::howto::rsencode</label>
+        <link refid="classgr_1_1howto_1_1rsencode"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>gr::howto::rsencode_impl</label>
+        <link refid="classgr_1_1howto_1_1rsencode__impl"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>gr::block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="20">
+        <label>gr::howto::rsencode</label>
+        <link refid="classgr_1_1howto_1_1rsencode"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>gr::howto::rsencode_impl</label>
+        <link refid="classgr_1_1howto_1_1rsencode__impl"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>gr::block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/zhou/src/gr-howto/lib/rsencode_impl.h" line="37" column="1" bodyfile="/home/zhou/src/gr-howto/lib/rsencode_impl.h" bodystart="36" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a2a83f3a8c032f15626845a61348ed494" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>dst</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1af123ca8510c82b8a0c312d3ebeb508b0" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>ecc_length</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a8b090e7e31610201cc85fe2cbc73c7bb" prot="public" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>Encode</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1ab8c8d351189c692a76d602fdf397505c" prot="public" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>EncodeBlock</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a41475e37dd3e1e642df4f1d7a8b933dc" prot="public" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>GeneratorPoly</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a036fd4242b48552cd241bd3532aeb0d1" prot="public" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>handle_fun</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aaa2096d1c1886bd65a217c246a394bdaf" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>ID_COEF_POS</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aafab8c25c57de3605c7afd108397a44f0" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>ID_ERASURE</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aade25db1872486ef3e531daa5e6ff54b0" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>ID_ERASURES_LOC</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aaeda5fa4f199925408521ebcb59777919" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>ID_ERR_EVAL</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aaff8a1521bf3118617995652581e1d5ff" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>ID_ERRORS</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa076190aeedafc0c1293cc2d5f45e36b1" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>ID_ERRORS_LOC</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa97589f666d4ae0677505e8ee36793422" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>ID_FORNEY</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa5c62c70a8e9569d76dc84fcfcd497b73" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>ID_GENERATOR</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aabcd9b440b5206f43e6b587314c07fadb" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>ID_MSG_E</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa4da36a6b01e1231807e10b4a20db5a7c" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>ID_MSG_IN</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa3054523e8fda610fd6860c34a237829b" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>ID_MSG_OUT</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa24f6ce12b5ee1d659db4cc6772a0c11a" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>ID_SYNDROMES</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aac158fac7264e5d202a3defac5a1c0d51" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>ID_TPOLY1</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa5d6eb34ebb7a04b19402f8f20cd6def4" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>ID_TPOLY2</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa7676b414076bbdd4f701ac6427b74dc9" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>ID_TPOLY3</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa7323dad6c0fbd5ef63a2c221562008d4" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>ID_TPOLY4</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode_1ab4f2bbca9584e8c05ca570c6ac9be73a" prot="public" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a52c5c5836cb23a1c3b31814ed243e02d" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>memory</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a454671857a21078f451cfdc0766534d4" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>msg_length</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809a" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>POLY_ID</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a3bc0065c7773d62da000c1fefeae57f0" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>polynoms</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a504aac9a3e5e0d342e93e85e18a2ef15" prot="public" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>rsencode_impl</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode_1a1093513dd5717b5a1b7bc584a62f7130" prot="public" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1aeba4f92b275ccf81dad10c46bbe6cb45" prot="private" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>src</name></member>
+      <member refid="classgr_1_1howto_1_1rsencode__impl_1a42d65e24213923e76424705d1b3a090f" prot="public" virt="non-virtual"><scope>gr::howto::rsencode_impl</scope><name>~rsencode_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
