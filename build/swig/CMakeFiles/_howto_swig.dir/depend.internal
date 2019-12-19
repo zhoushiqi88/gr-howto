@@ -6,6 +6,7 @@ swig/CMakeFiles/_howto_swig.dir/howto_swigPYTHON_wrap.cxx.o
  ../include/howto/noneblock.h
  ../include/howto/rsdecode.h
  ../include/howto/rsencode.h
+ ../include/howto/timehop.h
  /home/zhou/src/gr-howto/build/swig/howto_swigPYTHON_wrap.cxx
  /usr/include/python2.7/Python.h
  /usr/include/python2.7/abstract.h

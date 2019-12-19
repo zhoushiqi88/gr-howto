@@ -330,6 +330,33 @@ test_howto.cc.s:
 	cd /home/zhou/src/gr-howto/build && $(MAKE) -f lib/CMakeFiles/test-howto.dir/build.make lib/CMakeFiles/test-howto.dir/test_howto.cc.s
 .PHONY : test_howto.cc.s
 
+timehop_impl.o: timehop_impl.cc.o
+
+.PHONY : timehop_impl.o
+
+# target to build an object file
+timehop_impl.cc.o:
+	cd /home/zhou/src/gr-howto/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/timehop_impl.cc.o
+.PHONY : timehop_impl.cc.o
+
+timehop_impl.i: timehop_impl.cc.i
+
+.PHONY : timehop_impl.i
+
+# target to preprocess a source file
+timehop_impl.cc.i:
+	cd /home/zhou/src/gr-howto/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/timehop_impl.cc.i
+.PHONY : timehop_impl.cc.i
+
+timehop_impl.s: timehop_impl.cc.s
+
+.PHONY : timehop_impl.s
+
+# target to generate assembly for a file
+timehop_impl.cc.s:
+	cd /home/zhou/src/gr-howto/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/timehop_impl.cc.s
+.PHONY : timehop_impl.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -360,6 +387,9 @@ help:
 	@echo "... test_howto.o"
 	@echo "... test_howto.i"
 	@echo "... test_howto.s"
+	@echo "... timehop_impl.o"
+	@echo "... timehop_impl.i"
+	@echo "... timehop_impl.s"
 .PHONY : help
 
 

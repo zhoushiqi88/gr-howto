@@ -88,17 +88,27 @@ swig/howto_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/feval.i
 swig/howto_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/sync_decimator.i
 swig/howto_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/gr_logger.i
 swig/howto_swig_swig_2d0df.cpp: /usr/local/include/gnuradio/swig/prefs.i
+swig/howto_swig_swig_2d0df.cpp: swig/howto_swig_doc.i
 swig/howto_swig_swig_2d0df.cpp: swig/howto_swig.tag
 	cd /home/zhou/src/gr-howto/build/swig && /usr/bin/cmake -E copy /home/zhou/src/gr-howto/build/swig/howto_swig_swig_2d0df.cpp.in /home/zhou/src/gr-howto/build/swig/howto_swig_swig_2d0df.cpp
 
+swig/howto_swig_doc.i: swig/howto_swig_doc_swig_docs/xml/index.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zhou/src/gr-howto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating python docstrings for howto_swig_doc"
+	cd /home/zhou/src/gr-howto/docs/doxygen && /usr/bin/python2 -B /home/zhou/src/gr-howto/docs/doxygen/swig_doc.py /home/zhou/src/gr-howto/build/swig/howto_swig_doc_swig_docs/xml /home/zhou/src/gr-howto/build/swig/howto_swig_doc.i
+
 swig/howto_swig.tag: swig/_howto_swig_swig_tag
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zhou/src/gr-howto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating howto_swig.tag"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zhou/src/gr-howto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating howto_swig.tag"
 	cd /home/zhou/src/gr-howto/build/swig && ./_howto_swig_swig_tag
 	cd /home/zhou/src/gr-howto/build/swig && /usr/bin/cmake -E touch /home/zhou/src/gr-howto/build/swig/howto_swig.tag
 
+swig/howto_swig_doc_swig_docs/xml/index.xml: swig/_howto_swig_doc_tag
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zhou/src/gr-howto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating doxygen xml for howto_swig_doc docs"
+	cd /home/zhou/src/gr-howto/build/swig && ./_howto_swig_doc_tag
+	cd /home/zhou/src/gr-howto/build/swig && /usr/bin/doxygen /home/zhou/src/gr-howto/build/swig/howto_swig_doc_swig_docs/Doxyfile
+
 swig/CMakeFiles/howto_swig_swig_2d0df.dir/howto_swig_swig_2d0df.cpp.o: swig/CMakeFiles/howto_swig_swig_2d0df.dir/flags.make
 swig/CMakeFiles/howto_swig_swig_2d0df.dir/howto_swig_swig_2d0df.cpp.o: swig/howto_swig_swig_2d0df.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhou/src/gr-howto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object swig/CMakeFiles/howto_swig_swig_2d0df.dir/howto_swig_swig_2d0df.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhou/src/gr-howto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object swig/CMakeFiles/howto_swig_swig_2d0df.dir/howto_swig_swig_2d0df.cpp.o"
 	cd /home/zhou/src/gr-howto/build/swig && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/howto_swig_swig_2d0df.dir/howto_swig_swig_2d0df.cpp.o -c /home/zhou/src/gr-howto/build/swig/howto_swig_swig_2d0df.cpp
 
 swig/CMakeFiles/howto_swig_swig_2d0df.dir/howto_swig_swig_2d0df.cpp.i: cmake_force
@@ -130,7 +140,7 @@ howto_swig_swig_2d0df_EXTERNAL_OBJECTS =
 swig/howto_swig_swig_2d0df: swig/CMakeFiles/howto_swig_swig_2d0df.dir/howto_swig_swig_2d0df.cpp.o
 swig/howto_swig_swig_2d0df: swig/CMakeFiles/howto_swig_swig_2d0df.dir/build.make
 swig/howto_swig_swig_2d0df: swig/CMakeFiles/howto_swig_swig_2d0df.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhou/src/gr-howto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable howto_swig_swig_2d0df"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhou/src/gr-howto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable howto_swig_swig_2d0df"
 	cd /home/zhou/src/gr-howto/build/swig && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/howto_swig_swig_2d0df.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Swig source"
 	cd /home/zhou/src/gr-howto/build/swig && /usr/bin/cmake -E make_directory /home/zhou/src/gr-howto/build/swig
@@ -150,7 +160,9 @@ swig/CMakeFiles/howto_swig_swig_2d0df.dir/clean:
 .PHONY : swig/CMakeFiles/howto_swig_swig_2d0df.dir/clean
 
 swig/CMakeFiles/howto_swig_swig_2d0df.dir/depend: swig/howto_swig_swig_2d0df.cpp
+swig/CMakeFiles/howto_swig_swig_2d0df.dir/depend: swig/howto_swig_doc.i
 swig/CMakeFiles/howto_swig_swig_2d0df.dir/depend: swig/howto_swig.tag
+swig/CMakeFiles/howto_swig_swig_2d0df.dir/depend: swig/howto_swig_doc_swig_docs/xml/index.xml
 	cd /home/zhou/src/gr-howto/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhou/src/gr-howto /home/zhou/src/gr-howto/swig /home/zhou/src/gr-howto/build /home/zhou/src/gr-howto/build/swig /home/zhou/src/gr-howto/build/swig/CMakeFiles/howto_swig_swig_2d0df.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : swig/CMakeFiles/howto_swig_swig_2d0df.dir/depend
 

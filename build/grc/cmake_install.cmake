@@ -37,6 +37,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/zhou/src/gr-howto/grc/howto_noneblock.xml"
     "/home/zhou/src/gr-howto/grc/howto_rsencode.xml"
     "/home/zhou/src/gr-howto/grc/howto_rsdecode.xml"
+    "/home/zhou/src/gr-howto/grc/howto_timehop.xml"
     )
 endif()
 

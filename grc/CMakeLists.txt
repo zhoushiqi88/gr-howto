@@ -20,5 +20,6 @@
 install(FILES
     howto_noneblock.xml
     howto_rsencode.xml
-    howto_rsdecode.xml DESTINATION share/gnuradio/grc/blocks
+    howto_rsdecode.xml
+    howto_timehop.xml DESTINATION share/gnuradio/grc/blocks
 )

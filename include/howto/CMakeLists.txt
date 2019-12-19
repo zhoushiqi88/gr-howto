@@ -25,5 +25,6 @@ install(FILES
     api.h
     noneblock.h
     rsencode.h
-    rsdecode.h DESTINATION include/howto
+    rsdecode.h
+    timehop.h DESTINATION include/howto
 )

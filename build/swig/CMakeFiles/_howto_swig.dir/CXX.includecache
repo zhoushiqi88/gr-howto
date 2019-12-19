@@ -28,6 +28,12 @@ howto/api.h
 gnuradio/block.h
 -
 
+../include/howto/timehop.h
+howto/api.h
+-
+gnuradio/block.h
+-
+
 /home/zhou/src/gr-howto/build/swig/howto_swigPYTHON_wrap.cxx
 Python.h
 -
@@ -79,6 +85,8 @@ howto/rsencode.h
 /home/zhou/src/gr-howto/build/swig/howto/rsencode.h
 howto/rsdecode.h
 /home/zhou/src/gr-howto/build/swig/howto/rsdecode.h
+howto/timehop.h
+/home/zhou/src/gr-howto/build/swig/howto/timehop.h
 float.h
 -
 math.h
