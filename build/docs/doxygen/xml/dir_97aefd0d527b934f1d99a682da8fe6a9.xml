@@ -3,6 +3,7 @@
   <compounddef id="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir">
     <compoundname>lib</compoundname>
     <innerfile refid="noneblock__impl_8h">noneblock_impl.h</innerfile>
+    <innerfile refid="rsdecode__impl_8h">rsdecode_impl.h</innerfile>
     <innerfile refid="rsencode__impl_8h">rsencode_impl.h</innerfile>
     <briefdescription>
     </briefdescription>

@@ -4,6 +4,7 @@
     <compoundname>howto</compoundname>
     <innerfile refid="api_8h">api.h</innerfile>
     <innerfile refid="noneblock_8h">noneblock.h</innerfile>
+    <innerfile refid="rsdecode_8h">rsdecode.h</innerfile>
     <innerfile refid="rsencode_8h">rsencode.h</innerfile>
     <briefdescription>
     </briefdescription>

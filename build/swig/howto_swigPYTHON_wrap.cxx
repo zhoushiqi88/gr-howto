@@ -14861,7 +14861,21 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"rsencode_sptr_message_ports_out", _wrap_rsencode_sptr_message_ports_out, METH_VARARGS, (char *)"rsencode_sptr_message_ports_out(rsencode_sptr self) -> swig_int_ptr"},
 	 { (char *)"rsencode_sptr_message_subscribers", (PyCFunction) _wrap_rsencode_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"rsencode_sptr_message_subscribers(rsencode_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
 	 { (char *)"rsencode_sptr_swigregister", rsencode_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"rsdecode_make", (PyCFunction) _wrap_rsdecode_make, METH_VARARGS | METH_KEYWORDS, (char *)"rsdecode_make(int msglen, int ecclen) -> rsdecode_sptr"},
+	 { (char *)"rsdecode_make", (PyCFunction) _wrap_rsdecode_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"rsdecode_make(int msglen, int ecclen) -> rsdecode_sptr\n"
+		"\n"
+		"<+description of block+>\n"
+		"\n"
+		"Constructor Specific Documentation:\n"
+		"\n"
+		"Return a shared_ptr to a new instance of howto::rsdecode.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, howto::rsdecode's constructor is in a private implementation class. howto::rsdecode::make is the public interface for creating new instances.\n"
+		"\n"
+		"Args:\n"
+		"    msglen : \n"
+		"    ecclen : \n"
+		""},
 	 { (char *)"delete_rsdecode", _wrap_delete_rsdecode, METH_VARARGS, (char *)"delete_rsdecode(rsdecode self)"},
 	 { (char *)"rsdecode_swigregister", rsdecode_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_rsdecode_sptr", _wrap_new_rsdecode_sptr, METH_VARARGS, (char *)"\n"
@@ -14870,7 +14884,21 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"rsdecode_sptr___deref__", _wrap_rsdecode_sptr___deref__, METH_VARARGS, (char *)"rsdecode_sptr___deref__(rsdecode_sptr self) -> rsdecode"},
 	 { (char *)"delete_rsdecode_sptr", _wrap_delete_rsdecode_sptr, METH_VARARGS, (char *)"delete_rsdecode_sptr(rsdecode_sptr self)"},
-	 { (char *)"rsdecode_sptr_make", (PyCFunction) _wrap_rsdecode_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"rsdecode_sptr_make(rsdecode_sptr self, int msglen, int ecclen) -> rsdecode_sptr"},
+	 { (char *)"rsdecode_sptr_make", (PyCFunction) _wrap_rsdecode_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"rsdecode_sptr_make(rsdecode_sptr self, int msglen, int ecclen) -> rsdecode_sptr\n"
+		"\n"
+		"<+description of block+>\n"
+		"\n"
+		"Constructor Specific Documentation:\n"
+		"\n"
+		"Return a shared_ptr to a new instance of howto::rsdecode.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, howto::rsdecode's constructor is in a private implementation class. howto::rsdecode::make is the public interface for creating new instances.\n"
+		"\n"
+		"Args:\n"
+		"    msglen : \n"
+		"    ecclen : \n"
+		""},
 	 { (char *)"rsdecode_sptr_history", _wrap_rsdecode_sptr_history, METH_VARARGS, (char *)"rsdecode_sptr_history(rsdecode_sptr self) -> unsigned int"},
 	 { (char *)"rsdecode_sptr_declare_sample_delay", _wrap_rsdecode_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
 		"declare_sample_delay(int which, int delay)\n"

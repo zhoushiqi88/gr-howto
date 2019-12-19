@@ -928,7 +928,19 @@ rsencode_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.
 rsencode = rsencode.make;
 
 class rsdecode(object):
-    """Proxy of C++ gr::howto::rsdecode class."""
+    """
+    <+description of block+>
+
+    Constructor Specific Documentation:
+
+    Return a shared_ptr to a new instance of howto::rsdecode.
+
+    To avoid accidental use of raw pointers, howto::rsdecode's constructor is in a private implementation class. howto::rsdecode::make is the public interface for creating new instances.
+
+    Args:
+        msglen : 
+        ecclen : 
+    """
 
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
 
@@ -937,7 +949,21 @@ class rsdecode(object):
     __repr__ = _swig_repr
 
     def make(msglen, ecclen):
-        """make(int msglen, int ecclen) -> rsdecode_sptr"""
+        """
+        make(int msglen, int ecclen) -> rsdecode_sptr
+
+        <+description of block+>
+
+        Constructor Specific Documentation:
+
+        Return a shared_ptr to a new instance of howto::rsdecode.
+
+        To avoid accidental use of raw pointers, howto::rsdecode's constructor is in a private implementation class. howto::rsdecode::make is the public interface for creating new instances.
+
+        Args:
+            msglen : 
+            ecclen : 
+        """
         return _howto_swig.rsdecode_make(msglen, ecclen)
 
     make = staticmethod(make)
@@ -947,7 +973,21 @@ rsdecode_swigregister = _howto_swig.rsdecode_swigregister
 rsdecode_swigregister(rsdecode)
 
 def rsdecode_make(msglen, ecclen):
-    """rsdecode_make(int msglen, int ecclen) -> rsdecode_sptr"""
+    """
+    rsdecode_make(int msglen, int ecclen) -> rsdecode_sptr
+
+    <+description of block+>
+
+    Constructor Specific Documentation:
+
+    Return a shared_ptr to a new instance of howto::rsdecode.
+
+    To avoid accidental use of raw pointers, howto::rsdecode's constructor is in a private implementation class. howto::rsdecode::make is the public interface for creating new instances.
+
+    Args:
+        msglen : 
+        ecclen : 
+    """
     return _howto_swig.rsdecode_make(msglen, ecclen)
 
 class rsdecode_sptr(object):
@@ -975,7 +1015,21 @@ class rsdecode_sptr(object):
     __del__ = lambda self: None
 
     def make(self, msglen, ecclen):
-        """make(rsdecode_sptr self, int msglen, int ecclen) -> rsdecode_sptr"""
+        """
+        make(rsdecode_sptr self, int msglen, int ecclen) -> rsdecode_sptr
+
+        <+description of block+>
+
+        Constructor Specific Documentation:
+
+        Return a shared_ptr to a new instance of howto::rsdecode.
+
+        To avoid accidental use of raw pointers, howto::rsdecode's constructor is in a private implementation class. howto::rsdecode::make is the public interface for creating new instances.
+
+        Args:
+            msglen : 
+            ecclen : 
+        """
         return _howto_swig.rsdecode_sptr_make(self, msglen, ecclen)
 
 

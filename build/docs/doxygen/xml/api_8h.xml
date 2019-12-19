@@ -4,6 +4,7 @@
     <compoundname>api.h</compoundname>
     <includes local="no">gnuradio/attributes.h</includes>
     <includedby refid="noneblock_8h" local="no">noneblock.h</includedby>
+    <includedby refid="rsdecode_8h" local="no">rsdecode.h</includedby>
     <includedby refid="rsencode_8h" local="no">rsencode.h</includedby>
     <incdepgraph>
       <node id="1">
@@ -17,13 +18,13 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="5">
+      <node id="7">
         <label>rsencode.h</label>
         <link refid="rsencode_8h"/>
-        <childnode refid="6" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="6">
+      <node id="8">
         <label>rsencode_impl.h</label>
         <link refid="rsencode__impl_8h"/>
       </node>
@@ -33,12 +34,24 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
+      <node id="6">
+        <label>rsdecode_impl.h</label>
+        <link refid="rsdecode__impl_8h"/>
+      </node>
+      <node id="5">
+        <label>rsdecode.h</label>
+        <link refid="rsdecode_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
       <node id="2">
         <label>api.h</label>
         <link refid="api.h"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
       <node id="4">

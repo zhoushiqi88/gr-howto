@@ -4,6 +4,10 @@
     <member refid="classgr_1_1howto_1_1noneblock_1a5af3dd22b0aebae6a6796a8c614dcd51" kind="typedef"><name>sptr</name></member>
     <member refid="classgr_1_1howto_1_1noneblock_1a55c90fc19c065ffd9c0c3ed6d8bd63fd" kind="function"><name>make</name></member>
   </compound>
+  <compound refid="classgr_1_1howto_1_1rsdecode" kind="class"><name>gr::howto::rsdecode</name>
+    <member refid="classgr_1_1howto_1_1rsdecode_1a8e6d045d04b1adfc774a7e4ae498d5d6" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode_1a543615d9df6571fbb25f9717e714c591" kind="function"><name>make</name></member>
+  </compound>
   <compound refid="classgr_1_1howto_1_1rsencode" kind="class"><name>gr::howto::rsencode</name>
     <member refid="classgr_1_1howto_1_1rsencode_1a1093513dd5717b5a1b7bc584a62f7130" kind="typedef"><name>sptr</name></member>
     <member refid="classgr_1_1howto_1_1rsencode_1ab4f2bbca9584e8c05ca570c6ac9be73a" kind="function"><name>make</name></member>
@@ -18,6 +22,8 @@
     <member refid="api_8h_1a7a9fda890b8e28fac667cbd66796f13b" kind="define"><name>HOWTO_API</name></member>
   </compound>
   <compound refid="noneblock_8h" kind="file"><name>noneblock.h</name>
+  </compound>
+  <compound refid="rsdecode_8h" kind="file"><name>rsdecode.h</name>
   </compound>
   <compound refid="rsencode_8h" kind="file"><name>rsencode.h</name>
   </compound>

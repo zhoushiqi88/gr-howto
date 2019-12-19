@@ -9,6 +9,47 @@
     <member refid="classgr_1_1howto_1_1noneblock__impl_1a0a8cd2b468bdb6feb2197d13279255b2" kind="function"><name>~noneblock_impl</name></member>
     <member refid="classgr_1_1howto_1_1noneblock__impl_1a229a0a0b590eb45758d3e10cf824ac2b" kind="function"><name>handler</name></member>
   </compound>
+  <compound refid="classgr_1_1howto_1_1rsdecode" kind="class"><name>gr::howto::rsdecode</name>
+    <member refid="classgr_1_1howto_1_1rsdecode_1a8e6d045d04b1adfc774a7e4ae498d5d6" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode_1a543615d9df6571fbb25f9717e714c591" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1howto_1_1rsdecode__impl" kind="class"><name>gr::howto::rsdecode_impl</name>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22" kind="enum"><name>POLY_ID</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22ae0bec4b533052fef401a0bb71f14e93d" kind="enumvalue"><name>ID_MSG_IN</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a62e5969281dc6ca96d7b0e8e6a9f596a" kind="enumvalue"><name>ID_MSG_OUT</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22ac831d011f7c2b8e57a15a3f36e08b25b" kind="enumvalue"><name>ID_GENERATOR</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a052d99f8b6f2d569c886754333e2975e" kind="enumvalue"><name>ID_TPOLY1</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22acf27f4f28b1bbdf40695421464152a1c" kind="enumvalue"><name>ID_TPOLY2</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a4774790c24f66db55d1f68093d09eef2" kind="enumvalue"><name>ID_MSG_E</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22ac03c34d9df031ee6842694525f66ba09" kind="enumvalue"><name>ID_TPOLY3</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22acff1c976aea0299b91963d3fe5b34077" kind="enumvalue"><name>ID_TPOLY4</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22af7144b7a58f826dae7b8358059f13c64" kind="enumvalue"><name>ID_SYNDROMES</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a6d5f4c6be7af6b5a264ec6441e33ac5c" kind="enumvalue"><name>ID_FORNEY</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a08fef3e1f63f3e9aa8da1cf236bf33bb" kind="enumvalue"><name>ID_ERASURES_LOC</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22ab4314c2ed7dbff7c7ff9aaa0480e9e06" kind="enumvalue"><name>ID_ERRORS_LOC</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22adfa5f1afb930274baa7b63d04a48aeac" kind="enumvalue"><name>ID_ERASURES</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a43530ee4082bb54dc7129261ea048feb" kind="enumvalue"><name>ID_ERRORS</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22ae07567447ec5e0fbc93f3b1e149f0225" kind="enumvalue"><name>ID_COEF_POS</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a39cbf4b07748591f523f8862e2436059" kind="enumvalue"><name>ID_ERR_EVAL</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a9c04f9845b30073ab67f0f6ac0cc70ec" kind="variable"><name>msg_length</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1abf8ee9c8bd6a2060924d45cd7aeae128" kind="variable"><name>ecc_length</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a90b2ee115ae2a4fa0bdaef8e2c7196cc" kind="variable"><name>src</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1ad3eb0dab08023a78b62bf760dff7e268" kind="variable"><name>dst</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a397569c0a315c7af132fea38374e82de" kind="variable"><name>memory</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a0cb77a981d5a4e4a3c77d74f448b172d" kind="variable"><name>polynoms</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a3c6b818709069b893c9ab240cdec9023" kind="function"><name>rsdecode_impl</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1aa8f3ada910407a455570d4ff8ca16936" kind="function"><name>~rsdecode_impl</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a8e9935e286d52a6347e9f193e1c17989" kind="function"><name>handle_fun</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a65202f82db0bd61da928492d2a3ee314" kind="function"><name>DecodeBlock</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1ac340cbfd2f85f827e93e5e4852f4b90a" kind="function"><name>CalcSyndromes</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1ab23d23488347a5ee4304f185d2fb1f94" kind="function"><name>CalcForneySyndromes</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1ab46cc856e9a8a36637417750c65d3768" kind="function"><name>FindErrorLocator</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1aa4b91e22c5141476cc78bc9bdf78bf4a" kind="function"><name>FindErrors</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a41b3acaec84aad7a9085dd0de5429eac" kind="function"><name>CorrectErrata</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a3356977c77d4ba093fa76d84c86d19a5" kind="function"><name>FindErrataLocator</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a6258b3d3dbeac42f636d20bed6a94002" kind="function"><name>FindErrorEvaluator</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1ac852fb3fdf333744b3c284ab3c9d4e0a" kind="function"><name>Decode</name></member>
+  </compound>
   <compound refid="classgr_1_1howto_1_1rsencode" kind="class"><name>gr::howto::rsencode</name>
     <member refid="classgr_1_1howto_1_1rsencode_1a1093513dd5717b5a1b7bc584a62f7130" kind="typedef"><name>sptr</name></member>
     <member refid="classgr_1_1howto_1_1rsencode_1ab4f2bbca9584e8c05ca570c6ac9be73a" kind="function"><name>make</name></member>
@@ -33,8 +74,8 @@
     <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aaeda5fa4f199925408521ebcb59777919" kind="enumvalue"><name>ID_ERR_EVAL</name></member>
     <member refid="classgr_1_1howto_1_1rsencode__impl_1a454671857a21078f451cfdc0766534d4" kind="variable"><name>msg_length</name></member>
     <member refid="classgr_1_1howto_1_1rsencode__impl_1af123ca8510c82b8a0c312d3ebeb508b0" kind="variable"><name>ecc_length</name></member>
-    <member refid="classgr_1_1howto_1_1rsencode__impl_1aeba4f92b275ccf81dad10c46bbe6cb45" kind="variable"><name>src</name></member>
-    <member refid="classgr_1_1howto_1_1rsencode__impl_1a2a83f3a8c032f15626845a61348ed494" kind="variable"><name>dst</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1ad71977eb95882838eb766eea176f0d61" kind="variable"><name>src</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a43b83135ecb79c2e5403ac62172a610d" kind="variable"><name>dst</name></member>
     <member refid="classgr_1_1howto_1_1rsencode__impl_1a52c5c5836cb23a1c3b31814ed243e02d" kind="variable"><name>memory</name></member>
     <member refid="classgr_1_1howto_1_1rsencode__impl_1a3bc0065c7773d62da000c1fefeae57f0" kind="variable"><name>polynoms</name></member>
     <member refid="classgr_1_1howto_1_1rsencode__impl_1a504aac9a3e5e0d342e93e85e18a2ef15" kind="function"><name>rsencode_impl</name></member>
@@ -60,6 +101,12 @@
   <compound refid="noneblock_8h" kind="file"><name>noneblock.h</name>
   </compound>
   <compound refid="noneblock__impl_8h" kind="file"><name>noneblock_impl.h</name>
+  </compound>
+  <compound refid="rsdecode_8h" kind="file"><name>rsdecode.h</name>
+  </compound>
+  <compound refid="rsdecode__impl_8h" kind="file"><name>rsdecode_impl.h</name>
+    <member refid="rsdecode__impl_8h_1ab7c3a72061bf11c6e7220b86ed9126c8" kind="define"><name>MSG_CNT</name></member>
+    <member refid="rsdecode__impl_8h_1ae1182cdcd15ad5741a846f971aeb7f0a" kind="define"><name>POLY_CNT</name></member>
   </compound>
   <compound refid="rsencode_8h" kind="file"><name>rsencode.h</name>
   </compound>

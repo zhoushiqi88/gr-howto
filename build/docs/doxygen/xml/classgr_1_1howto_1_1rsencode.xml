@@ -48,30 +48,30 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="11">
+      <node id="22">
         <label>gr::howto::rsencode</label>
         <link refid="classgr_1_1howto_1_1rsencode"/>
-        <childnode refid="12" relation="public-inheritance">
+        <childnode refid="23" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="13">
+      <node id="24">
         <label>gr::howto::rsencode_impl</label>
         <link refid="classgr_1_1howto_1_1rsencode__impl"/>
-        <childnode refid="11" relation="public-inheritance">
+        <childnode refid="22" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="12">
+      <node id="23">
         <label>gr::block</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="14">
+      <node id="25">
         <label>gr::howto::rsencode</label>
         <link refid="classgr_1_1howto_1_1rsencode"/>
-        <childnode refid="15" relation="public-inheritance">
+        <childnode refid="26" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="15">
+      <node id="26">
         <label>gr::block</label>
       </node>
     </collaborationgraph>

@@ -1,0 +1,567 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1howto_1_1rsdecode__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::howto::rsdecode_impl</compoundname>
+    <basecompoundref refid="classgr_1_1howto_1_1rsdecode" prot="public" virt="non-virtual">gr::howto::rsdecode</basecompoundref>
+    <includes refid="rsdecode__impl_8h" local="no">rsdecode_impl.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22" prot="private" static="no">
+        <name>POLY_ID</name>
+        <enumvalue id="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22ae0bec4b533052fef401a0bb71f14e93d" prot="private">
+          <name>ID_MSG_IN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a62e5969281dc6ca96d7b0e8e6a9f596a" prot="private">
+          <name>ID_MSG_OUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22ac831d011f7c2b8e57a15a3f36e08b25b" prot="private">
+          <name>ID_GENERATOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a052d99f8b6f2d569c886754333e2975e" prot="private">
+          <name>ID_TPOLY1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22acf27f4f28b1bbdf40695421464152a1c" prot="private">
+          <name>ID_TPOLY2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a4774790c24f66db55d1f68093d09eef2" prot="private">
+          <name>ID_MSG_E</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22ac03c34d9df031ee6842694525f66ba09" prot="private">
+          <name>ID_TPOLY3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22acff1c976aea0299b91963d3fe5b34077" prot="private">
+          <name>ID_TPOLY4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22af7144b7a58f826dae7b8358059f13c64" prot="private">
+          <name>ID_SYNDROMES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a6d5f4c6be7af6b5a264ec6441e33ac5c" prot="private">
+          <name>ID_FORNEY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a08fef3e1f63f3e9aa8da1cf236bf33bb" prot="private">
+          <name>ID_ERASURES_LOC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22ab4314c2ed7dbff7c7ff9aaa0480e9e06" prot="private">
+          <name>ID_ERRORS_LOC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22adfa5f1afb930274baa7b63d04a48aeac" prot="private">
+          <name>ID_ERASURES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a43530ee4082bb54dc7129261ea048feb" prot="private">
+          <name>ID_ERRORS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22ae07567447ec5e0fbc93f3b1e149f0225" prot="private">
+          <name>ID_COEF_POS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a39cbf4b07748591f523f8862e2436059" prot="private">
+          <name>ID_ERR_EVAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" line="43" column="1" bodyfile="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" bodystart="43" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1howto_1_1rsdecode__impl_1a9c04f9845b30073ab67f0f6ac0cc70ec" prot="private" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t gr::howto::rsdecode_impl::msg_length</definition>
+        <argsstring></argsstring>
+        <name>msg_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" line="38" column="1" bodyfile="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1howto_1_1rsdecode__impl_1abf8ee9c8bd6a2060924d45cd7aeae128" prot="private" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t gr::howto::rsdecode_impl::ecc_length</definition>
+        <argsstring></argsstring>
+        <name>ecc_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" line="39" column="1" bodyfile="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1howto_1_1rsdecode__impl_1a90b2ee115ae2a4fa0bdaef8e2c7196cc" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string gr::howto::rsdecode_impl::src</definition>
+        <argsstring></argsstring>
+        <name>src</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" line="40" column="1" bodyfile="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1howto_1_1rsdecode__impl_1ad3eb0dab08023a78b62bf760dff7e268" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char gr::howto::rsdecode_impl::dst[10]</definition>
+        <argsstring>[10]</argsstring>
+        <name>dst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" line="41" column="1" bodyfile="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1howto_1_1rsdecode__impl_1a397569c0a315c7af132fea38374e82de" prot="private" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* gr::howto::rsdecode_impl::memory</definition>
+        <argsstring></argsstring>
+        <name>memory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" line="68" column="1" bodyfile="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1howto_1_1rsdecode__impl_1a0cb77a981d5a4e4a3c77d74f448b172d" prot="private" static="no" mutable="no">
+        <type>Poly</type>
+        <definition>Poly gr::howto::rsdecode_impl::polynoms[MSG_CNT+POLY_CNT]</definition>
+        <argsstring>[MSG_CNT+POLY_CNT]</argsstring>
+        <name>polynoms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" line="69" column="1" bodyfile="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1howto_1_1rsdecode__impl_1a3c6b818709069b893c9ab240cdec9023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::howto::rsdecode_impl::rsdecode_impl</definition>
+        <argsstring>(int msglen, int ecclen)</argsstring>
+        <name>rsdecode_impl</name>
+        <param>
+          <type>int</type>
+          <declname>msglen</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ecclen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1howto_1_1rsdecode__impl_1aa8f3ada910407a455570d4ff8ca16936" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::howto::rsdecode_impl::~rsdecode_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~rsdecode_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1howto_1_1rsdecode__impl_1a8e9935e286d52a6347e9f193e1c17989" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::howto::rsdecode_impl::handle_fun</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>handle_fun</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1howto_1_1rsdecode__impl_1a65202f82db0bd61da928492d2a3ee314" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::howto::rsdecode_impl::DecodeBlock</definition>
+        <argsstring>(const void *src, const void *ecc, void *dst, uint8_t *erase_pos, size_t erase_count)</argsstring>
+        <name>DecodeBlock</name>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>ecc</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>erase_pos</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>erase_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1howto_1_1rsdecode__impl_1ac340cbfd2f85f827e93e5e4852f4b90a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::howto::rsdecode_impl::CalcSyndromes</definition>
+        <argsstring>(const Poly *msg)</argsstring>
+        <name>CalcSyndromes</name>
+        <param>
+          <type>const Poly *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1howto_1_1rsdecode__impl_1ab23d23488347a5ee4304f185d2fb1f94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::howto::rsdecode_impl::CalcForneySyndromes</definition>
+        <argsstring>(const Poly *synd, const Poly *erasures_pos, size_t msg_in_size)</argsstring>
+        <name>CalcForneySyndromes</name>
+        <param>
+          <type>const Poly *</type>
+          <declname>synd</declname>
+        </param>
+        <param>
+          <type>const Poly *</type>
+          <declname>erasures_pos</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>msg_in_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1howto_1_1rsdecode__impl_1ab46cc856e9a8a36637417750c65d3768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::howto::rsdecode_impl::FindErrorLocator</definition>
+        <argsstring>(const Poly *synd, Poly *erase_loc, size_t erase_count)</argsstring>
+        <name>FindErrorLocator</name>
+        <param>
+          <type>const Poly *</type>
+          <declname>synd</declname>
+        </param>
+        <param>
+          <type>Poly *</type>
+          <declname>erase_loc</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>erase_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1howto_1_1rsdecode__impl_1aa4b91e22c5141476cc78bc9bdf78bf4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::howto::rsdecode_impl::FindErrors</definition>
+        <argsstring>(const Poly *error_loc, size_t msg_in_size)</argsstring>
+        <name>FindErrors</name>
+        <param>
+          <type>const Poly *</type>
+          <declname>error_loc</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>msg_in_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1howto_1_1rsdecode__impl_1a41b3acaec84aad7a9085dd0de5429eac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::howto::rsdecode_impl::CorrectErrata</definition>
+        <argsstring>(const Poly *synd, const Poly *err_pos, const Poly *msg_in)</argsstring>
+        <name>CorrectErrata</name>
+        <param>
+          <type>const Poly *</type>
+          <declname>synd</declname>
+        </param>
+        <param>
+          <type>const Poly *</type>
+          <declname>err_pos</declname>
+        </param>
+        <param>
+          <type>const Poly *</type>
+          <declname>msg_in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1howto_1_1rsdecode__impl_1a3356977c77d4ba093fa76d84c86d19a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::howto::rsdecode_impl::FindErrataLocator</definition>
+        <argsstring>(const Poly *epos)</argsstring>
+        <name>FindErrataLocator</name>
+        <param>
+          <type>const Poly *</type>
+          <declname>epos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1howto_1_1rsdecode__impl_1a6258b3d3dbeac42f636d20bed6a94002" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::howto::rsdecode_impl::FindErrorEvaluator</definition>
+        <argsstring>(const Poly *synd, const Poly *errata_loc, Poly *dst, uint8_t ecclen)</argsstring>
+        <name>FindErrorEvaluator</name>
+        <param>
+          <type>const Poly *</type>
+          <declname>synd</declname>
+        </param>
+        <param>
+          <type>const Poly *</type>
+          <declname>errata_loc</declname>
+        </param>
+        <param>
+          <type>Poly *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>ecclen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1howto_1_1rsdecode__impl_1ac852fb3fdf333744b3c284ab3c9d4e0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::howto::rsdecode_impl::Decode</definition>
+        <argsstring>(const void *src, void *dst, uint8_t *erase_pos=NULL, size_t erase_count=0)</argsstring>
+        <name>Decode</name>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>erase_pos</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>erase_count</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" line="86" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="16">
+        <label>gr::howto::rsdecode_impl</label>
+        <link refid="classgr_1_1howto_1_1rsdecode__impl"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>block</label>
+      </node>
+      <node id="17">
+        <label>gr::howto::rsdecode</label>
+        <link refid="classgr_1_1howto_1_1rsdecode"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>gr::howto::rsdecode_impl</label>
+        <link refid="classgr_1_1howto_1_1rsdecode__impl"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>block</label>
+      </node>
+      <node id="20">
+        <label>gr::howto::rsdecode</label>
+        <link refid="classgr_1_1howto_1_1rsdecode"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" line="35" column="1" bodyfile="/home/zhou/src/gr-howto/lib/rsdecode_impl.h" bodystart="34" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1ab23d23488347a5ee4304f185d2fb1f94" prot="public" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>CalcForneySyndromes</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1ac340cbfd2f85f827e93e5e4852f4b90a" prot="public" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>CalcSyndromes</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a41b3acaec84aad7a9085dd0de5429eac" prot="public" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>CorrectErrata</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1ac852fb3fdf333744b3c284ab3c9d4e0a" prot="public" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>Decode</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a65202f82db0bd61da928492d2a3ee314" prot="public" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>DecodeBlock</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1ad3eb0dab08023a78b62bf760dff7e268" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>dst</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1abf8ee9c8bd6a2060924d45cd7aeae128" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>ecc_length</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a3356977c77d4ba093fa76d84c86d19a5" prot="public" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>FindErrataLocator</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a6258b3d3dbeac42f636d20bed6a94002" prot="public" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>FindErrorEvaluator</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1ab46cc856e9a8a36637417750c65d3768" prot="public" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>FindErrorLocator</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1aa4b91e22c5141476cc78bc9bdf78bf4a" prot="public" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>FindErrors</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a8e9935e286d52a6347e9f193e1c17989" prot="public" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>handle_fun</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22ae07567447ec5e0fbc93f3b1e149f0225" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>ID_COEF_POS</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22adfa5f1afb930274baa7b63d04a48aeac" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>ID_ERASURES</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a08fef3e1f63f3e9aa8da1cf236bf33bb" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>ID_ERASURES_LOC</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a39cbf4b07748591f523f8862e2436059" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>ID_ERR_EVAL</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a43530ee4082bb54dc7129261ea048feb" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>ID_ERRORS</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22ab4314c2ed7dbff7c7ff9aaa0480e9e06" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>ID_ERRORS_LOC</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a6d5f4c6be7af6b5a264ec6441e33ac5c" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>ID_FORNEY</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22ac831d011f7c2b8e57a15a3f36e08b25b" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>ID_GENERATOR</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a4774790c24f66db55d1f68093d09eef2" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>ID_MSG_E</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22ae0bec4b533052fef401a0bb71f14e93d" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>ID_MSG_IN</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a62e5969281dc6ca96d7b0e8e6a9f596a" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>ID_MSG_OUT</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22af7144b7a58f826dae7b8358059f13c64" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>ID_SYNDROMES</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a052d99f8b6f2d569c886754333e2975e" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>ID_TPOLY1</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22acf27f4f28b1bbdf40695421464152a1c" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>ID_TPOLY2</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22ac03c34d9df031ee6842694525f66ba09" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>ID_TPOLY3</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22acff1c976aea0299b91963d3fe5b34077" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>ID_TPOLY4</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode_1a543615d9df6571fbb25f9717e714c591" prot="public" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a397569c0a315c7af132fea38374e82de" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>memory</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a9c04f9845b30073ab67f0f6ac0cc70ec" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>msg_length</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>POLY_ID</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a0cb77a981d5a4e4a3c77d74f448b172d" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>polynoms</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a3c6b818709069b893c9ab240cdec9023" prot="public" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>rsdecode_impl</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode_1a8e6d045d04b1adfc774a7e4ae498d5d6" prot="public" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1a90b2ee115ae2a4fa0bdaef8e2c7196cc" prot="private" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>src</name></member>
+      <member refid="classgr_1_1howto_1_1rsdecode__impl_1aa8f3ada910407a455570d4ff8ca16936" prot="public" virt="non-virtual"><scope>gr::howto::rsdecode_impl</scope><name>~rsdecode_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
