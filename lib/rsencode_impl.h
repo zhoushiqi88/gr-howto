@@ -39,7 +39,7 @@ namespace gr {
       const uint8_t msg_length;
       const uint8_t ecc_length;
       std::string src;
-      char dst[18];
+      char dst[38];  /*需要改@@@@@@@@@@@@@@@@@@@@@@@@*/
       enum POLY_ID {
 			ID_MSG_IN = 0,
 			ID_MSG_OUT,

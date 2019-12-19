@@ -89,7 +89,7 @@ namespace gr {
 
     void rsdecode_impl::handle_fun(pmt::pmt_t msg) {
       size_t msg_len;
-      void* str[18] = {0};
+      void* str[38] = {0}; //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
       if(pmt::is_blob(msg)) {
 
         const void* ms = pmt::blob_data(msg);
@@ -97,7 +97,7 @@ namespace gr {
         //FILE*fp = fopen("/home/zhou/src/RS/Reed-Solomon/include/GccEncode.txt","wb");
 		//fwrite(pmt::blob_data(msg),18,1,fp);
 
-        memcpy(str,ms,18);
+        memcpy(str,ms,38);  //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         // src = pmt::symbol_to_string(msg);
         // msg_len = src.length();
 
