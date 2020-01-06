@@ -75,7 +75,8 @@ namespace gr {
       message_port_register_in(pmt::mp("in"));
 
       set_msg_handler(pmt::mp("in"), boost::bind(&rsencode_impl::handle_fun,this,_1));
-
+      
+      dst = new char[msg_length];
     }
 
     /*
@@ -88,14 +89,9 @@ namespace gr {
 
   void rsencode_impl::handle_fun(pmt::pmt_t msg) {
 		size_t msg_len;
-		char str[30] = {0}; //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		std::string str(msg_length+ecc_length,'z'); //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 		if(pmt::is_symbol(msg)) {
 			src = pmt::symbol_to_string(msg);
-			//std::cout << "-----------" << src << std::endl;
-			msg_len = src.length();
-			//std::cout << "receive msg" << src.length() << std::endl;
-			for(int i = 0;i < 30;i++) str[i] = src[i];   //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-			//std::cout << "--------------str"<< str <<std::endl;
 		}
 
 		else {
@@ -103,10 +99,10 @@ namespace gr {
 			return;
 		}
 
-		rsencode_impl::Encode(str,rsencode_impl::dst);
-		FILE*fp = fopen("/home/zhou/src/RS/Reed-Solomon/include/GccEncode.txt","wb");
-		fwrite(dst,38,1,fp);  //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-		pmt::pmt_t s = pmt::mp(dst,38);  //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		rsencode_impl::Encode(src.data(),rsencode_impl::dst);
+		//FILE*fp = fopen("/home/zhou/src/RS/Reed-Solomon/include/GccEncode.txt","wb");
+		//fwrite(dst,msg_length+ecc_length,1,fp);  //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		pmt::pmt_t s = pmt::mp(dst,msg_length+ecc_length);  //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 		//std::cout << "---------------dst:    " << dst << std::endl;
 		message_port_pub(pmt::mp("out"),s);
 

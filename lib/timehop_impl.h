@@ -30,12 +30,20 @@ namespace gr {
     {
      private:
       // Nothing to declare in this block.
+      std::vector<std::string> bursts;
+      std::string re_msg;
+      double times[28];
 
      public:
       timehop_impl();
       ~timehop_impl();
 
       // Where all the action really happens
+
+      void handle_fun(pmt::pmt_t msg);
+      void general_burst(pmt::pmt_t msg);
+      void general_time();
+
     };
 
   } // namespace howto

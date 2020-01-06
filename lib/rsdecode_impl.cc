@@ -89,15 +89,15 @@ namespace gr {
 
     void rsdecode_impl::handle_fun(pmt::pmt_t msg) {
       size_t msg_len;
-      void* str[38] = {0}; //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-      if(pmt::is_blob(msg)) {
+      std::string str(msg_length+ecc_length,'z'); //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+      if(pmt::is_symbol(msg)) {
 
-        const void* ms = pmt::blob_data(msg);
+        std::string re = pmt::symbol_to_string(msg);
         //std::cout << "---------------" << pmt::blob_length(msg) << std::endl;
         //FILE*fp = fopen("/home/zhou/src/RS/Reed-Solomon/include/GccEncode.txt","wb");
 		//fwrite(pmt::blob_data(msg),18,1,fp);
 
-        memcpy(str,ms,38);  //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        memcpy(&str[0],&re[0],msg_length+ecc_length);  //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         // src = pmt::symbol_to_string(msg);
         // msg_len = src.length();
 
@@ -110,7 +110,7 @@ namespace gr {
         throw std::invalid_argument("wrongs ----");
         return;
       }
-      Decode(str,dst); 
+      Decode(str.data(),dst); 
       //std::cout << "------------"<< (char*)dst << std::endl;
       std::string s(rsdecode_impl::dst);
       //std::cout << "------------"<< s << std::endl;

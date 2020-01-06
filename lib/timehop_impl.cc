@@ -42,13 +42,59 @@ namespace gr {
       : gr::block("timehop",
               gr::io_signature::make(0,0,0),
               gr::io_signature::make(0,0,0))
-    {}
+    {
+    }
 
     /*
      * Our virtual destructor.
      */
     timehop_impl::~timehop_impl()
     {
+    }
+
+    void
+    timehop_impl::handle_fun(pmt::pmt_t msg) {
+      general_burst(msg);
+      general_time();
+      struct timespec t1;
+      struct timespec t2;
+      for(int i = 0;i < 27;i++) {
+        t1.tv_sec = 0;
+        t1.tv_nsec = (long)times[i]*1000000000;
+        nanosleep(&t1,&t2);
+        pmt::pmt_t sd = pmt::string_to_symbol(bursts[i]);
+        message_port_pub(pmt::mp("out"),sd);
+      }
+    }
+
+    void
+    timehop_impl::general_burst(pmt::pmt_t msg) {
+      re_msg = pmt::symbol_to_string(msg);
+      std::string tmp(11,'a');
+      for(int i = 0;i < 27;i++) {
+        uint8_t burst_num = i;
+        uint8_t net_num = 0; //机器编号
+        memcpy(&tmp[0],&burst_num,1);
+        memcpy(&tmp[1],&net_num,1);
+        memcpy(&tmp[2],&re_msg[i*9],9);
+        bursts.push_back(tmp);
+      }
+    }
+
+    void timehop_impl::general_time() {
+      std::random_device rd;
+      std::mt19937 gen(rd());
+      std::exponential_distribution<> d(1);
+
+      double total = 0.0;
+      for(int i = 0;i < 28;i++) {
+        times[i] = d(gen);
+        total += times[i];
+      }
+
+      for(int i = 0;i < 28;i++) {
+        times[i] /= total;
+      }
     }
 
     

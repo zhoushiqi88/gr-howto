@@ -5,24 +5,24 @@
     <includes refid="api_8h" local="no">howto/api.h</includes>
     <includes local="no">gnuradio/block.h</includes>
     <incdepgraph>
-      <node id="13">
+      <node id="14">
         <label>gnuradio/attributes.h</label>
       </node>
-      <node id="11">
+      <node id="12">
         <label>rsdecode.h</label>
         <link refid="rsdecode.h"/>
-        <childnode refid="12" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
       </node>
-      <node id="14">
+      <node id="15">
         <label>gnuradio/block.h</label>
       </node>
-      <node id="12">
+      <node id="13">
         <label>howto/api.h</label>
         <link refid="api_8h"/>
-        <childnode refid="13" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
     </incdepgraph>
