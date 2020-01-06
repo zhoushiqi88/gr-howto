@@ -18135,7 +18135,17 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"rsdecode_sptr_message_ports_out", _wrap_rsdecode_sptr_message_ports_out, METH_VARARGS, (char *)"rsdecode_sptr_message_ports_out(rsdecode_sptr self) -> swig_int_ptr"},
 	 { (char *)"rsdecode_sptr_message_subscribers", (PyCFunction) _wrap_rsdecode_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"rsdecode_sptr_message_subscribers(rsdecode_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
 	 { (char *)"rsdecode_sptr_swigregister", rsdecode_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"timehop_make", _wrap_timehop_make, METH_VARARGS, (char *)"timehop_make() -> timehop_sptr"},
+	 { (char *)"timehop_make", _wrap_timehop_make, METH_VARARGS, (char *)"\n"
+		"timehop_make() -> timehop_sptr\n"
+		"\n"
+		"<+description of block+>\n"
+		"\n"
+		"Constructor Specific Documentation:\n"
+		"\n"
+		"Return a shared_ptr to a new instance of howto::timehop.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, howto::timehop's constructor is in a private implementation class. howto::timehop::make is the public interface for creating new instances.\n"
+		""},
 	 { (char *)"delete_timehop", _wrap_delete_timehop, METH_VARARGS, (char *)"delete_timehop(timehop self)"},
 	 { (char *)"timehop_swigregister", timehop_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_timehop_sptr", _wrap_new_timehop_sptr, METH_VARARGS, (char *)"\n"
@@ -18144,7 +18154,17 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"timehop_sptr___deref__", _wrap_timehop_sptr___deref__, METH_VARARGS, (char *)"timehop_sptr___deref__(timehop_sptr self) -> timehop"},
 	 { (char *)"delete_timehop_sptr", _wrap_delete_timehop_sptr, METH_VARARGS, (char *)"delete_timehop_sptr(timehop_sptr self)"},
-	 { (char *)"timehop_sptr_make", _wrap_timehop_sptr_make, METH_VARARGS, (char *)"timehop_sptr_make(timehop_sptr self) -> timehop_sptr"},
+	 { (char *)"timehop_sptr_make", _wrap_timehop_sptr_make, METH_VARARGS, (char *)"\n"
+		"timehop_sptr_make(timehop_sptr self) -> timehop_sptr\n"
+		"\n"
+		"<+description of block+>\n"
+		"\n"
+		"Constructor Specific Documentation:\n"
+		"\n"
+		"Return a shared_ptr to a new instance of howto::timehop.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, howto::timehop's constructor is in a private implementation class. howto::timehop::make is the public interface for creating new instances.\n"
+		""},
 	 { (char *)"timehop_sptr_history", _wrap_timehop_sptr_history, METH_VARARGS, (char *)"timehop_sptr_history(timehop_sptr self) -> unsigned int"},
 	 { (char *)"timehop_sptr_declare_sample_delay", _wrap_timehop_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
 		"declare_sample_delay(int which, int delay)\n"

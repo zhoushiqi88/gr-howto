@@ -12,6 +12,10 @@
     <member refid="classgr_1_1howto_1_1rsencode_1a1093513dd5717b5a1b7bc584a62f7130" kind="typedef"><name>sptr</name></member>
     <member refid="classgr_1_1howto_1_1rsencode_1ab4f2bbca9584e8c05ca570c6ac9be73a" kind="function"><name>make</name></member>
   </compound>
+  <compound refid="classgr_1_1howto_1_1timehop" kind="class"><name>gr::howto::timehop</name>
+    <member refid="classgr_1_1howto_1_1timehop_1ac5bfbfba891a5069b36a1db452dbc4bd" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1howto_1_1timehop_1aff851836f2c7a8a37d0297439ea03a0e" kind="function"><name>make</name></member>
+  </compound>
   <compound refid="namespacegr" kind="namespace"><name>gr</name>
   </compound>
   <compound refid="namespacegr_1_1howto" kind="namespace"><name>gr::howto</name>
@@ -26,6 +30,8 @@
   <compound refid="rsdecode_8h" kind="file"><name>rsdecode.h</name>
   </compound>
   <compound refid="rsencode_8h" kind="file"><name>rsencode.h</name>
+  </compound>
+  <compound refid="timehop_8h" kind="file"><name>timehop.h</name>
   </compound>
   <compound refid="dir_931aa87cbc005b1171acaaec17b62d81" kind="dir"><name>howto</name>
   </compound>

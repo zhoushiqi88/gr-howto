@@ -5,6 +5,7 @@
     <innerclass refid="classgr_1_1howto_1_1noneblock" prot="public">gr::howto::noneblock</innerclass>
     <innerclass refid="classgr_1_1howto_1_1rsdecode" prot="public">gr::howto::rsdecode</innerclass>
     <innerclass refid="classgr_1_1howto_1_1rsencode" prot="public">gr::howto::rsencode</innerclass>
+    <innerclass refid="classgr_1_1howto_1_1timehop" prot="public">gr::howto::timehop</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

@@ -1342,7 +1342,15 @@ rsdecode_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.
 rsdecode = rsdecode.make;
 
 class timehop(object):
-    """Proxy of C++ gr::howto::timehop class."""
+    """
+    <+description of block+>
+
+    Constructor Specific Documentation:
+
+    Return a shared_ptr to a new instance of howto::timehop.
+
+    To avoid accidental use of raw pointers, howto::timehop's constructor is in a private implementation class. howto::timehop::make is the public interface for creating new instances.
+    """
 
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
 
@@ -1351,7 +1359,17 @@ class timehop(object):
     __repr__ = _swig_repr
 
     def make():
-        """make() -> timehop_sptr"""
+        """
+        make() -> timehop_sptr
+
+        <+description of block+>
+
+        Constructor Specific Documentation:
+
+        Return a shared_ptr to a new instance of howto::timehop.
+
+        To avoid accidental use of raw pointers, howto::timehop's constructor is in a private implementation class. howto::timehop::make is the public interface for creating new instances.
+        """
         return _howto_swig.timehop_make()
 
     make = staticmethod(make)
@@ -1361,7 +1379,17 @@ timehop_swigregister = _howto_swig.timehop_swigregister
 timehop_swigregister(timehop)
 
 def timehop_make():
-    """timehop_make() -> timehop_sptr"""
+    """
+    timehop_make() -> timehop_sptr
+
+    <+description of block+>
+
+    Constructor Specific Documentation:
+
+    Return a shared_ptr to a new instance of howto::timehop.
+
+    To avoid accidental use of raw pointers, howto::timehop's constructor is in a private implementation class. howto::timehop::make is the public interface for creating new instances.
+    """
     return _howto_swig.timehop_make()
 
 class timehop_sptr(object):
@@ -1389,7 +1417,17 @@ class timehop_sptr(object):
     __del__ = lambda self: None
 
     def make(self):
-        """make(timehop_sptr self) -> timehop_sptr"""
+        """
+        make(timehop_sptr self) -> timehop_sptr
+
+        <+description of block+>
+
+        Constructor Specific Documentation:
+
+        Return a shared_ptr to a new instance of howto::timehop.
+
+        To avoid accidental use of raw pointers, howto::timehop's constructor is in a private implementation class. howto::timehop::make is the public interface for creating new instances.
+        """
         return _howto_swig.timehop_sptr_make(self)
 
 

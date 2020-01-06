@@ -104,9 +104,8 @@ namespace gr {
 		}
 
 		rsencode_impl::Encode(str,rsencode_impl::dst);
-		FILE*fp = fopen("/home/zhou/src/RS/Reed-Solomon/include/GccEncode.txt","wb");
-		fwrite(dst,38,1,fp);  //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-		pmt::pmt_t s = pmt::mp(dst,38);  //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		std::string mm(dst,dst+msg_length+ecc_length);
+		pmt::pmt_t s = pmt::string_to_symbol(mm);  //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 		//std::cout << "---------------dst:    " << dst << std::endl;
 		message_port_pub(pmt::mp("out"),s);
 

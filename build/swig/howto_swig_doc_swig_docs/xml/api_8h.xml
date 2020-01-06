@@ -6,6 +6,7 @@
     <includedby refid="noneblock_8h" local="no">noneblock.h</includedby>
     <includedby refid="rsdecode_8h" local="no">rsdecode.h</includedby>
     <includedby refid="rsencode_8h" local="no">rsencode.h</includedby>
+    <includedby refid="timehop_8h" local="no">timehop.h</includedby>
     <incdepgraph>
       <node id="1">
         <label>gnuradio/attributes.h</label>
@@ -21,6 +22,10 @@
       <node id="5">
         <label>rsencode.h</label>
         <link refid="rsencode_8h"/>
+      </node>
+      <node id="6">
+        <label>timehop.h</label>
+        <link refid="timehop_8h"/>
       </node>
       <node id="3">
         <label>noneblock.h</label>
@@ -38,6 +43,8 @@
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

@@ -71,3 +71,19 @@ To avoid accidental use of raw pointers, howto::rsencode's constructor is in a p
 Args:
     msglen : 
     ecclen : "
+
+%feature("docstring") gr::howto::timehop "<+description of block+>
+
+Constructor Specific Documentation:
+
+Return a shared_ptr to a new instance of howto::timehop.
+
+To avoid accidental use of raw pointers, howto::timehop's constructor is in a private implementation class. howto::timehop::make is the public interface for creating new instances."
+
+%feature("docstring") gr::howto::timehop::make "<+description of block+>
+
+Constructor Specific Documentation:
+
+Return a shared_ptr to a new instance of howto::timehop.
+
+To avoid accidental use of raw pointers, howto::timehop's constructor is in a private implementation class. howto::timehop::make is the public interface for creating new instances."

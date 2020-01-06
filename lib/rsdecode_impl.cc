@@ -90,14 +90,14 @@ namespace gr {
     void rsdecode_impl::handle_fun(pmt::pmt_t msg) {
       size_t msg_len;
       void* str[38] = {0}; //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-      if(pmt::is_blob(msg)) {
+      if(pmt::is_symbol(msg)) {
 
-        const void* ms = pmt::blob_data(msg);
+        std::string ms = pmt::symbol_to_string(msg);
         //std::cout << "---------------" << pmt::blob_length(msg) << std::endl;
         //FILE*fp = fopen("/home/zhou/src/RS/Reed-Solomon/include/GccEncode.txt","wb");
 		//fwrite(pmt::blob_data(msg),18,1,fp);
 
-        memcpy(str,ms,38);  //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        memcpy(str,&ms[0],38);  //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         // src = pmt::symbol_to_string(msg);
         // msg_len = src.length();
 
