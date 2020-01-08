@@ -91,14 +91,23 @@ namespace gr {
     }
 
     void rsdecode_impl::handle_fun(pmt::pmt_t msg) {
+<<<<<<< HEAD
       
       if(pmt::is_symbol(msg)) {
 
         src = pmt::symbol_to_string(msg);
+=======
+      if(pmt::is_symbol(msg)) {
+
+        src = pmt::symbol_to_string(msg);
+>>>>>>> dev
         //std::cout << "---------------" << pmt::blob_length(msg) << std::endl;
         //FILE*fp = fopen("/home/zhou/src/RS/Reed-Solomon/include/GccEncode.txt","wb");
 		//fwrite(pmt::blob_data(msg),18,1,fp);
 
+<<<<<<< HEAD
+=======
+>>>>>>> dev
         // src = pmt::symbol_to_string(msg);
         // msg_len = src.length();
 
@@ -111,7 +120,11 @@ namespace gr {
         throw std::invalid_argument("wrongs ----");
         return;
       }
+<<<<<<< HEAD
       Decode(src.data(),dst); 
+=======
+      Decode(src.data(),dst); 
+>>>>>>> dev
       //std::cout << "------------"<< (char*)dst << std::endl;
       std::string s(rsdecode_impl::dst);
       //std::cout << "------------"<< s << std::endl;

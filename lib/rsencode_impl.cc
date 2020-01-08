@@ -75,8 +75,13 @@ namespace gr {
       message_port_register_in(pmt::mp("in"));
 
       set_msg_handler(pmt::mp("in"), boost::bind(&rsencode_impl::handle_fun,this,_1));
+<<<<<<< HEAD
 
       dst = new char[msg_length+ecc_length];
+=======
+      
+      dst = new char[msg_length+ecc_length];
+>>>>>>> dev
     }
 
     /*
@@ -89,11 +94,13 @@ namespace gr {
 
 
   void rsencode_impl::handle_fun(pmt::pmt_t msg) {
+<<<<<<< HEAD
 		if(pmt::is_symbol(msg)) {
 			src = pmt::symbol_to_string(msg);
-			//std::cout << "-----------" << src << std::endl;
-			//std::cout << "receive msg" << src.length() << std::endl;
-			//std::cout << "--------------str"<< str <<std::endl;
+=======
+		if(pmt::is_symbol(msg)) {
+			src = pmt::symbol_to_string(msg);
+>>>>>>> dev
 		}
 
 		else {
@@ -102,8 +109,13 @@ namespace gr {
 		}
 
 		rsencode_impl::Encode(src.data(),rsencode_impl::dst);
+<<<<<<< HEAD
 		std::string mm(dst,dst+msg_length+ecc_length);
-		pmt::pmt_t s = pmt::string_to_symbol(mm);  //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		pmt::pmt_t s = pmt::string_to_symbol(mm);
+=======
+		std::string mm(dst,dst+msg_lenght+ecc_length);
+		pmt::pmt_t s = pmt::string_to_symbol(mm);
+>>>>>>> dev
 		//std::cout << "---------------dst:    " << dst << std::endl;
 		message_port_pub(pmt::mp("out"),s);
 
@@ -126,7 +138,7 @@ namespace gr {
         assert(msg_length + ecc_length < 256);
 
         /* Generator cache, it dosn't change for one template parameters */
-        static uint8_t generator_cache[8+1] = {0};
+        static uint8_t generator_cache[117+1] = {0};
         static bool    generator_cached = false;
 
         /* Allocating memory on stack for polynomials storage */

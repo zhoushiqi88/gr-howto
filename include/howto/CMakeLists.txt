@@ -26,5 +26,6 @@ install(FILES
     noneblock.h
     rsencode.h
     rsdecode.h
-    timehop.h DESTINATION include/howto
+    timehop.h
+    msgpool.h DESTINATION include/howto
 )
