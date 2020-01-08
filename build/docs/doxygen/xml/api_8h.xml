@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="api_8h" kind="file" language="C++">
+    <compoundname>api.h</compoundname>
+    <includes local="no">gnuradio/attributes.h</includes>
+    <includedby refid="msgpool_8h" local="no">msgpool.h</includedby>
+    <includedby refid="noneblock_8h" local="no">noneblock.h</includedby>
+    <includedby refid="rsdecode_8h" local="no">rsdecode.h</includedby>
+    <includedby refid="rsencode_8h" local="no">rsencode.h</includedby>
+    <includedby refid="timehop_8h" local="no">timehop.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="0">
+        <label>api.h</label>
+        <link refid="api.h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>rsencode.h</label>
+        <link refid="rsencode_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>msgpool_impl.h</label>
+        <link refid="msgpool__impl_8h"/>
+      </node>
+      <node id="10">
+        <label>rsencode_impl.h</label>
+        <link refid="rsencode__impl_8h"/>
+      </node>
+      <node id="11">
+        <label>timehop.h</label>
+        <link refid="timehop_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>noneblock.h</label>
+        <link refid="noneblock_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>rsdecode_impl.h</label>
+        <link refid="rsdecode__impl_8h"/>
+      </node>
+      <node id="7">
+        <label>rsdecode.h</label>
+        <link refid="rsdecode_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>timehop_impl.h</label>
+        <link refid="timehop__impl_8h"/>
+      </node>
+      <node id="2">
+        <label>api.h</label>
+        <link refid="api.h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>msgpool.h</label>
+        <link refid="msgpool_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>noneblock_impl.h</label>
+        <link refid="noneblock__impl_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="api_8h_1a7a9fda890b8e28fac667cbd66796f13b" prot="public" static="no">
+        <name>HOWTO_API</name>
+        <initializer>__GR_ATTR_IMPORT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/include/howto/api.h" line="31" column="12" bodyfile="/home/zhou/src/gr-howto/include/howto/api.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhou/src/gr-howto/include/howto/api.h"/>
+  </compounddef>
+</doxygen>

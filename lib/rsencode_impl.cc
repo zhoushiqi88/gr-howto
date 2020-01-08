@@ -75,13 +75,8 @@ namespace gr {
       message_port_register_in(pmt::mp("in"));
 
       set_msg_handler(pmt::mp("in"), boost::bind(&rsencode_impl::handle_fun,this,_1));
-<<<<<<< HEAD
-
-      dst = new char[msg_length+ecc_length];
-=======
       
       dst = new char[msg_length+ecc_length];
->>>>>>> dev
     }
 
     /*
@@ -94,13 +89,9 @@ namespace gr {
 
 
   void rsencode_impl::handle_fun(pmt::pmt_t msg) {
-<<<<<<< HEAD
+
 		if(pmt::is_symbol(msg)) {
 			src = pmt::symbol_to_string(msg);
-=======
-		if(pmt::is_symbol(msg)) {
-			src = pmt::symbol_to_string(msg);
->>>>>>> dev
 		}
 
 		else {
@@ -109,13 +100,9 @@ namespace gr {
 		}
 
 		rsencode_impl::Encode(src.data(),rsencode_impl::dst);
-<<<<<<< HEAD
+
 		std::string mm(dst,dst+msg_length+ecc_length);
 		pmt::pmt_t s = pmt::string_to_symbol(mm);
-=======
-		std::string mm(dst,dst+msg_lenght+ecc_length);
-		pmt::pmt_t s = pmt::string_to_symbol(mm);
->>>>>>> dev
 		//std::cout << "---------------dst:    " << dst << std::endl;
 		message_port_pub(pmt::mp("out"),s);
 

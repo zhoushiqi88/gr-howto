@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgr_1_1howto_1_1Node" kind="struct" language="C++" prot="public">
+    <compoundname>gr::howto::Node</compoundname>
+    <includes refid="msgpool__impl_8h" local="no">msgpool_impl.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgr_1_1howto_1_1Node_1aa4a2c934bd565b6e183639e44a3e5483" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::howto::Node::key_</definition>
+        <argsstring></argsstring>
+        <name>key_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/msgpool_impl.h" line="30" column="1" bodyfile="/home/zhou/src/gr-howto/lib/msgpool_impl.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1howto_1_1Node_1a18a2c1cc07a511593b955b23827712f3" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* gr::howto::Node::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/msgpool_impl.h" line="31" column="1" bodyfile="/home/zhou/src/gr-howto/lib/msgpool_impl.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="structgr_1_1howto_1_1Node_1a457cc90efc14cb8c2ad5646b21a21be5" compoundref="msgpool__impl_8h" startline="35" endline="37">~Node</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgr_1_1howto_1_1Node_1a57d7c0653b61d38d9008d437a8a01f99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::howto::Node::Node</definition>
+        <argsstring>(uint8_t key)</argsstring>
+        <name>Node</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/msgpool_impl.h" line="32" column="1" bodyfile="/home/zhou/src/gr-howto/lib/msgpool_impl.h" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="structgr_1_1howto_1_1Node_1a457cc90efc14cb8c2ad5646b21a21be5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::howto::Node::~Node</definition>
+        <argsstring>()</argsstring>
+        <name>~Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/msgpool_impl.h" line="35" column="1" bodyfile="/home/zhou/src/gr-howto/lib/msgpool_impl.h" bodystart="35" bodyend="37"/>
+        <references refid="structgr_1_1howto_1_1Node_1a18a2c1cc07a511593b955b23827712f3" compoundref="msgpool__impl_8h" startline="31">data</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhou/src/gr-howto/lib/msgpool_impl.h" line="29" column="1" bodyfile="/home/zhou/src/gr-howto/lib/msgpool_impl.h" bodystart="29" bodyend="38"/>
+    <listofallmembers>
+      <member refid="structgr_1_1howto_1_1Node_1a18a2c1cc07a511593b955b23827712f3" prot="public" virt="non-virtual"><scope>gr::howto::Node</scope><name>data</name></member>
+      <member refid="structgr_1_1howto_1_1Node_1aa4a2c934bd565b6e183639e44a3e5483" prot="public" virt="non-virtual"><scope>gr::howto::Node</scope><name>key_</name></member>
+      <member refid="structgr_1_1howto_1_1Node_1a57d7c0653b61d38d9008d437a8a01f99" prot="public" virt="non-virtual"><scope>gr::howto::Node</scope><name>Node</name></member>
+      <member refid="structgr_1_1howto_1_1Node_1a457cc90efc14cb8c2ad5646b21a21be5" prot="public" virt="non-virtual"><scope>gr::howto::Node</scope><name>~Node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

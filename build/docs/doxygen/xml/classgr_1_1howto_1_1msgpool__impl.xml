@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1howto_1_1msgpool__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::howto::msgpool_impl</compoundname>
+    <basecompoundref refid="classgr_1_1howto_1_1msgpool" prot="public" virt="non-virtual">gr::howto::msgpool</basecompoundref>
+    <includes refid="msgpool__impl_8h" local="no">msgpool_impl.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1howto_1_1msgpool__impl_1ad4973b5fc1d606851df6d648fbf6684f" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="structgr_1_1howto_1_1Node" kindref="compound">Node</ref> &gt;</type>
+        <definition>using gr::howto::msgpool_impl::Nodeptr =  std::shared_ptr&lt;Node&gt;</definition>
+        <argsstring></argsstring>
+        <name>Nodeptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/msgpool_impl.h" line="47" column="1" bodyfile="/home/zhou/src/gr-howto/lib/msgpool_impl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgr_1_1howto_1_1msgpool__impl_1a61226ce36e18a3f9a656d1f5398364ac" prot="public" static="no">
+        <type>std::list&lt; <ref refid="classgr_1_1howto_1_1msgpool__impl_1ad4973b5fc1d606851df6d648fbf6684f" kindref="member">Nodeptr</ref> &gt;</type>
+        <definition>using gr::howto::msgpool_impl::MsgList =  std::list&lt;Nodeptr&gt;</definition>
+        <argsstring></argsstring>
+        <name>MsgList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/msgpool_impl.h" line="48" column="1" bodyfile="/home/zhou/src/gr-howto/lib/msgpool_impl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classgr_1_1howto_1_1msgpool__impl_1a9dea49f88693b361604646a3b0d872cb" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classgr_1_1howto_1_1msgpool__impl_1a61226ce36e18a3f9a656d1f5398364ac" kindref="member">MsgList</ref> &gt;</type>
+        <definition>using gr::howto::msgpool_impl::MsgPool =  std::vector&lt;MsgList&gt;</definition>
+        <argsstring></argsstring>
+        <name>MsgPool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/msgpool_impl.h" line="49" column="1" bodyfile="/home/zhou/src/gr-howto/lib/msgpool_impl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1howto_1_1msgpool__impl_1a65d5bc2a68f4cabf6a1fb14c89b1eef1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::howto::msgpool_impl::threshold_</definition>
+        <argsstring></argsstring>
+        <name>threshold_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/msgpool_impl.h" line="57" column="1" bodyfile="/home/zhou/src/gr-howto/lib/msgpool_impl.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1howto_1_1msgpool__impl_1a5f1021b59f863ebf8fb5d96f437d1cc1" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* gr::howto::msgpool_impl::msgnum</definition>
+        <argsstring></argsstring>
+        <name>msgnum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/msgpool_impl.h" line="58" column="1" bodyfile="/home/zhou/src/gr-howto/lib/msgpool_impl.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1howto_1_1msgpool__impl_1a6099d107e35d8831184fb12377ca34e9" prot="private" static="no" mutable="no">
+        <type><ref refid="classgr_1_1howto_1_1msgpool__impl_1a9dea49f88693b361604646a3b0d872cb" kindref="member">MsgPool</ref></type>
+        <definition>MsgPool gr::howto::msgpool_impl::msgpool_</definition>
+        <argsstring></argsstring>
+        <name>msgpool_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/msgpool_impl.h" line="59" column="1" bodyfile="/home/zhou/src/gr-howto/lib/msgpool_impl.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1howto_1_1msgpool__impl_1a5683b02e7acf45b3b5f4e0e20ae4ea3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::howto::msgpool_impl::msgpool_impl</definition>
+        <argsstring>(int threshold)</argsstring>
+        <name>msgpool_impl</name>
+        <param>
+          <type>int</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/msgpool_impl.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1howto_1_1msgpool__impl_1a038776aac1c416835584ed69bf50141c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::howto::msgpool_impl::~msgpool_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~msgpool_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/msgpool_impl.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1howto_1_1msgpool__impl_1aeaaedb324697a22dc900d88fd391a867" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::howto::msgpool_impl::handle_fun</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>handle_fun</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/msgpool_impl.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1howto_1_1msgpool__impl_1a5526438575e6ffcec0ffc401bd453952" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::howto::msgpool_impl::insert_node</definition>
+        <argsstring>(uint8_t index, Nodeptr node)</argsstring>
+        <name>insert_node</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr_1_1howto_1_1msgpool__impl_1ad4973b5fc1d606851df6d648fbf6684f" kindref="member">Nodeptr</ref></type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/msgpool_impl.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1howto_1_1msgpool__impl_1af72be4db4df6845736ee0dba74a0e60b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::howto::msgpool_impl::sendmsg</definition>
+        <argsstring>(MsgList msglist)</argsstring>
+        <name>sendmsg</name>
+        <param>
+          <type><ref refid="classgr_1_1howto_1_1msgpool__impl_1a61226ce36e18a3f9a656d1f5398364ac" kindref="member">MsgList</ref></type>
+          <declname>msglist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhou/src/gr-howto/lib/msgpool_impl.h" line="64" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>gr::howto::msgpool_impl</label>
+        <link refid="classgr_1_1howto_1_1msgpool__impl"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>block</label>
+      </node>
+      <node id="6">
+        <label>gr::howto::msgpool</label>
+        <link refid="classgr_1_1howto_1_1msgpool"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>gr::howto::msgpool_impl</label>
+        <link refid="classgr_1_1howto_1_1msgpool__impl"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>block</label>
+      </node>
+      <node id="9">
+        <label>gr::howto::msgpool</label>
+        <link refid="classgr_1_1howto_1_1msgpool"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/zhou/src/gr-howto/lib/msgpool_impl.h" line="41" column="1" bodyfile="/home/zhou/src/gr-howto/lib/msgpool_impl.h" bodystart="40" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classgr_1_1howto_1_1msgpool__impl_1aeaaedb324697a22dc900d88fd391a867" prot="public" virt="non-virtual"><scope>gr::howto::msgpool_impl</scope><name>handle_fun</name></member>
+      <member refid="classgr_1_1howto_1_1msgpool__impl_1a5526438575e6ffcec0ffc401bd453952" prot="private" virt="non-virtual"><scope>gr::howto::msgpool_impl</scope><name>insert_node</name></member>
+      <member refid="classgr_1_1howto_1_1msgpool_1a7e0e0b1aa0320895ea4e423f5d593d97" prot="public" virt="non-virtual"><scope>gr::howto::msgpool_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1howto_1_1msgpool__impl_1a61226ce36e18a3f9a656d1f5398364ac" prot="public" virt="non-virtual"><scope>gr::howto::msgpool_impl</scope><name>MsgList</name></member>
+      <member refid="classgr_1_1howto_1_1msgpool__impl_1a5f1021b59f863ebf8fb5d96f437d1cc1" prot="private" virt="non-virtual"><scope>gr::howto::msgpool_impl</scope><name>msgnum</name></member>
+      <member refid="classgr_1_1howto_1_1msgpool__impl_1a9dea49f88693b361604646a3b0d872cb" prot="public" virt="non-virtual"><scope>gr::howto::msgpool_impl</scope><name>MsgPool</name></member>
+      <member refid="classgr_1_1howto_1_1msgpool__impl_1a6099d107e35d8831184fb12377ca34e9" prot="private" virt="non-virtual"><scope>gr::howto::msgpool_impl</scope><name>msgpool_</name></member>
+      <member refid="classgr_1_1howto_1_1msgpool__impl_1a5683b02e7acf45b3b5f4e0e20ae4ea3f" prot="public" virt="non-virtual"><scope>gr::howto::msgpool_impl</scope><name>msgpool_impl</name></member>
+      <member refid="classgr_1_1howto_1_1msgpool__impl_1ad4973b5fc1d606851df6d648fbf6684f" prot="public" virt="non-virtual"><scope>gr::howto::msgpool_impl</scope><name>Nodeptr</name></member>
+      <member refid="classgr_1_1howto_1_1msgpool__impl_1af72be4db4df6845736ee0dba74a0e60b" prot="private" virt="non-virtual"><scope>gr::howto::msgpool_impl</scope><name>sendmsg</name></member>
+      <member refid="classgr_1_1howto_1_1msgpool_1ac797ba984d23c2a316199e3a91f9e8cd" prot="public" virt="non-virtual"><scope>gr::howto::msgpool_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1howto_1_1msgpool__impl_1a65d5bc2a68f4cabf6a1fb14c89b1eef1" prot="private" virt="non-virtual"><scope>gr::howto::msgpool_impl</scope><name>threshold_</name></member>
+      <member refid="classgr_1_1howto_1_1msgpool__impl_1a038776aac1c416835584ed69bf50141c" prot="public" virt="non-virtual"><scope>gr::howto::msgpool_impl</scope><name>~msgpool_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
