@@ -1,5 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classgr_1_1howto_1_1msgpool" kind="class"><name>gr::howto::msgpool</name>
+    <member refid="classgr_1_1howto_1_1msgpool_1ac797ba984d23c2a316199e3a91f9e8cd" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1howto_1_1msgpool_1a7e0e0b1aa0320895ea4e423f5d593d97" kind="function"><name>make</name></member>
+  </compound>
   <compound refid="classgr_1_1howto_1_1noneblock" kind="class"><name>gr::howto::noneblock</name>
     <member refid="classgr_1_1howto_1_1noneblock_1a5af3dd22b0aebae6a6796a8c614dcd51" kind="typedef"><name>sptr</name></member>
     <member refid="classgr_1_1howto_1_1noneblock_1a55c90fc19c065ffd9c0c3ed6d8bd63fd" kind="function"><name>make</name></member>
@@ -24,6 +28,8 @@
   </compound>
   <compound refid="api_8h" kind="file"><name>api.h</name>
     <member refid="api_8h_1a7a9fda890b8e28fac667cbd66796f13b" kind="define"><name>HOWTO_API</name></member>
+  </compound>
+  <compound refid="msgpool_8h" kind="file"><name>msgpool.h</name>
   </compound>
   <compound refid="noneblock_8h" kind="file"><name>noneblock.h</name>
   </compound>

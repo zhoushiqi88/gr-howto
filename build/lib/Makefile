@@ -197,6 +197,33 @@ test-howto/fast:
 	cd /home/zhou/src/gr-howto/build && $(MAKE) -f lib/CMakeFiles/test-howto.dir/build.make lib/CMakeFiles/test-howto.dir/build
 .PHONY : test-howto/fast
 
+msgpool_impl.o: msgpool_impl.cc.o
+
+.PHONY : msgpool_impl.o
+
+# target to build an object file
+msgpool_impl.cc.o:
+	cd /home/zhou/src/gr-howto/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/msgpool_impl.cc.o
+.PHONY : msgpool_impl.cc.o
+
+msgpool_impl.i: msgpool_impl.cc.i
+
+.PHONY : msgpool_impl.i
+
+# target to preprocess a source file
+msgpool_impl.cc.i:
+	cd /home/zhou/src/gr-howto/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/msgpool_impl.cc.i
+.PHONY : msgpool_impl.cc.i
+
+msgpool_impl.s: msgpool_impl.cc.s
+
+.PHONY : msgpool_impl.s
+
+# target to generate assembly for a file
+msgpool_impl.cc.s:
+	cd /home/zhou/src/gr-howto/build && $(MAKE) -f lib/CMakeFiles/gnuradio-howto.dir/build.make lib/CMakeFiles/gnuradio-howto.dir/msgpool_impl.cc.s
+.PHONY : msgpool_impl.cc.s
+
 noneblock_impl.o: noneblock_impl.cc.o
 
 .PHONY : noneblock_impl.o
@@ -374,6 +401,9 @@ help:
 	@echo "... test-howto"
 	@echo "... test"
 	@echo "... edit_cache"
+	@echo "... msgpool_impl.o"
+	@echo "... msgpool_impl.i"
+	@echo "... msgpool_impl.s"
 	@echo "... noneblock_impl.o"
 	@echo "... noneblock_impl.i"
 	@echo "... noneblock_impl.s"

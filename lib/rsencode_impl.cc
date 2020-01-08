@@ -88,7 +88,6 @@ namespace gr {
 
 
   void rsencode_impl::handle_fun(pmt::pmt_t msg) {
-		size_t msg_len;
 		std::string str(msg_length+ecc_length,'z'); //需要改@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 		if(pmt::is_symbol(msg)) {
 			src = pmt::symbol_to_string(msg);
@@ -125,7 +124,7 @@ namespace gr {
         assert(msg_length + ecc_length < 256);
 
         /* Generator cache, it dosn't change for one template parameters */
-        static uint8_t generator_cache[8+1] = {0};
+        static uint8_t generator_cache[117+1] = {0};
         static bool    generator_cached = false;
 
         /* Allocating memory on stack for polynomials storage */

@@ -3,6 +3,7 @@
   <compounddef id="dir_931aa87cbc005b1171acaaec17b62d81" kind="dir">
     <compoundname>howto</compoundname>
     <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="msgpool_8h">msgpool.h</innerfile>
     <innerfile refid="noneblock_8h">noneblock.h</innerfile>
     <innerfile refid="rsdecode_8h">rsdecode.h</innerfile>
     <innerfile refid="rsencode_8h">rsencode.h</innerfile>

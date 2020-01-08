@@ -29,7 +29,8 @@ list(APPEND howto_sources
     noneblock_impl.cc
     rsencode_impl.cc
     rsdecode_impl.cc
-    timehop_impl.cc )
+    timehop_impl.cc
+    msgpool_impl.cc )
 
 set(howto_sources "${howto_sources}" PARENT_SCOPE)
 if(NOT howto_sources)

@@ -10,6 +10,12 @@
 gnuradio/attributes.h
 -
 
+../include/howto/msgpool.h
+howto/api.h
+-
+gnuradio/block.h
+-
+
 ../include/howto/noneblock.h
 howto/api.h
 -
@@ -87,6 +93,8 @@ howto/rsdecode.h
 /home/zhou/src/gr-howto/build/swig/howto/rsdecode.h
 howto/timehop.h
 /home/zhou/src/gr-howto/build/swig/howto/timehop.h
+howto/msgpool.h
+/home/zhou/src/gr-howto/build/swig/howto/msgpool.h
 float.h
 -
 math.h

@@ -3,6 +3,7 @@
 
 swig/CMakeFiles/_howto_swig.dir/howto_swigPYTHON_wrap.cxx.o
  ../include/howto/api.h
+ ../include/howto/msgpool.h
  ../include/howto/noneblock.h
  ../include/howto/rsdecode.h
  ../include/howto/rsencode.h

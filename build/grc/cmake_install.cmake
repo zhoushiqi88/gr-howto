@@ -38,6 +38,7 @@ if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMP
     "/home/zhou/src/gr-howto/grc/howto_rsencode.xml"
     "/home/zhou/src/gr-howto/grc/howto_rsdecode.xml"
     "/home/zhou/src/gr-howto/grc/howto_timehop.xml"
+    "/home/zhou/src/gr-howto/grc/howto_msgpool.xml"
     )
 endif()
 

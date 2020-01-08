@@ -8,6 +8,28 @@
 
 
 
+%feature("docstring") gr::howto::msgpool "<+description of block+>
+
+Constructor Specific Documentation:
+
+Return a shared_ptr to a new instance of howto::msgpool.
+
+To avoid accidental use of raw pointers, howto::msgpool's constructor is in a private implementation class. howto::msgpool::make is the public interface for creating new instances.
+
+Args:
+    threshold : "
+
+%feature("docstring") gr::howto::msgpool::make "<+description of block+>
+
+Constructor Specific Documentation:
+
+Return a shared_ptr to a new instance of howto::msgpool.
+
+To avoid accidental use of raw pointers, howto::msgpool's constructor is in a private implementation class. howto::msgpool::make is the public interface for creating new instances.
+
+Args:
+    threshold : "
+
 %feature("docstring") gr::howto::noneblock "<+description of block+>
 
 Constructor Specific Documentation:

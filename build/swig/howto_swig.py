@@ -1739,5 +1739,415 @@ timehop_sptr_swigregister(timehop_sptr)
 timehop_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id())
 timehop = timehop.make;
 
+class msgpool(object):
+    """
+    <+description of block+>
+
+    Constructor Specific Documentation:
+
+    Return a shared_ptr to a new instance of howto::msgpool.
+
+    To avoid accidental use of raw pointers, howto::msgpool's constructor is in a private implementation class. howto::msgpool::make is the public interface for creating new instances.
+
+    Args:
+        threshold : 
+    """
+
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+
+    def __init__(self, *args, **kwargs):
+        raise AttributeError("No constructor defined")
+    __repr__ = _swig_repr
+
+    def make(threshold):
+        """
+        make(int threshold) -> msgpool_sptr
+
+        <+description of block+>
+
+        Constructor Specific Documentation:
+
+        Return a shared_ptr to a new instance of howto::msgpool.
+
+        To avoid accidental use of raw pointers, howto::msgpool's constructor is in a private implementation class. howto::msgpool::make is the public interface for creating new instances.
+
+        Args:
+            threshold : 
+        """
+        return _howto_swig.msgpool_make(threshold)
+
+    make = staticmethod(make)
+    __swig_destroy__ = _howto_swig.delete_msgpool
+    __del__ = lambda self: None
+msgpool_swigregister = _howto_swig.msgpool_swigregister
+msgpool_swigregister(msgpool)
+
+def msgpool_make(threshold):
+    """
+    msgpool_make(int threshold) -> msgpool_sptr
+
+    <+description of block+>
+
+    Constructor Specific Documentation:
+
+    Return a shared_ptr to a new instance of howto::msgpool.
+
+    To avoid accidental use of raw pointers, howto::msgpool's constructor is in a private implementation class. howto::msgpool::make is the public interface for creating new instances.
+
+    Args:
+        threshold : 
+    """
+    return _howto_swig.msgpool_make(threshold)
+
+class msgpool_sptr(object):
+    """Proxy of C++ boost::shared_ptr<(gr::howto::msgpool)> class."""
+
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    __repr__ = _swig_repr
+
+    def __init__(self, *args):
+        """
+        __init__(boost::shared_ptr<(gr::howto::msgpool)> self) -> msgpool_sptr
+        __init__(boost::shared_ptr<(gr::howto::msgpool)> self, msgpool p) -> msgpool_sptr
+        """
+        this = _howto_swig.new_msgpool_sptr(*args)
+        try:
+            self.this.append(this)
+        except Exception:
+            self.this = this
+
+    def __deref__(self):
+        """__deref__(msgpool_sptr self) -> msgpool"""
+        return _howto_swig.msgpool_sptr___deref__(self)
+
+    __swig_destroy__ = _howto_swig.delete_msgpool_sptr
+    __del__ = lambda self: None
+
+    def make(self, threshold):
+        """
+        make(msgpool_sptr self, int threshold) -> msgpool_sptr
+
+        <+description of block+>
+
+        Constructor Specific Documentation:
+
+        Return a shared_ptr to a new instance of howto::msgpool.
+
+        To avoid accidental use of raw pointers, howto::msgpool's constructor is in a private implementation class. howto::msgpool::make is the public interface for creating new instances.
+
+        Args:
+            threshold : 
+        """
+        return _howto_swig.msgpool_sptr_make(self, threshold)
+
+
+    def history(self):
+        """history(msgpool_sptr self) -> unsigned int"""
+        return _howto_swig.msgpool_sptr_history(self)
+
+
+    def declare_sample_delay(self, *args):
+        """
+        declare_sample_delay(msgpool_sptr self, int which, int delay)
+        declare_sample_delay(msgpool_sptr self, unsigned int delay)
+        """
+        return _howto_swig.msgpool_sptr_declare_sample_delay(self, *args)
+
+
+    def sample_delay(self, which):
+        """sample_delay(msgpool_sptr self, int which) -> unsigned int"""
+        return _howto_swig.msgpool_sptr_sample_delay(self, which)
+
+
+    def output_multiple(self):
+        """output_multiple(msgpool_sptr self) -> int"""
+        return _howto_swig.msgpool_sptr_output_multiple(self)
+
+
+    def relative_rate(self):
+        """relative_rate(msgpool_sptr self) -> double"""
+        return _howto_swig.msgpool_sptr_relative_rate(self)
+
+
+    def start(self):
+        """start(msgpool_sptr self) -> bool"""
+        return _howto_swig.msgpool_sptr_start(self)
+
+
+    def stop(self):
+        """stop(msgpool_sptr self) -> bool"""
+        return _howto_swig.msgpool_sptr_stop(self)
+
+
+    def nitems_read(self, which_input):
+        """nitems_read(msgpool_sptr self, unsigned int which_input) -> uint64_t"""
+        return _howto_swig.msgpool_sptr_nitems_read(self, which_input)
+
+
+    def nitems_written(self, which_output):
+        """nitems_written(msgpool_sptr self, unsigned int which_output) -> uint64_t"""
+        return _howto_swig.msgpool_sptr_nitems_written(self, which_output)
+
+
+    def max_noutput_items(self):
+        """max_noutput_items(msgpool_sptr self) -> int"""
+        return _howto_swig.msgpool_sptr_max_noutput_items(self)
+
+
+    def set_max_noutput_items(self, m):
+        """set_max_noutput_items(msgpool_sptr self, int m)"""
+        return _howto_swig.msgpool_sptr_set_max_noutput_items(self, m)
+
+
+    def unset_max_noutput_items(self):
+        """unset_max_noutput_items(msgpool_sptr self)"""
+        return _howto_swig.msgpool_sptr_unset_max_noutput_items(self)
+
+
+    def is_set_max_noutput_items(self):
+        """is_set_max_noutput_items(msgpool_sptr self) -> bool"""
+        return _howto_swig.msgpool_sptr_is_set_max_noutput_items(self)
+
+
+    def set_min_noutput_items(self, m):
+        """set_min_noutput_items(msgpool_sptr self, int m)"""
+        return _howto_swig.msgpool_sptr_set_min_noutput_items(self, m)
+
+
+    def min_noutput_items(self):
+        """min_noutput_items(msgpool_sptr self) -> int"""
+        return _howto_swig.msgpool_sptr_min_noutput_items(self)
+
+
+    def max_output_buffer(self, i):
+        """max_output_buffer(msgpool_sptr self, int i) -> long"""
+        return _howto_swig.msgpool_sptr_max_output_buffer(self, i)
+
+
+    def set_max_output_buffer(self, *args):
+        """
+        set_max_output_buffer(msgpool_sptr self, long max_output_buffer)
+        set_max_output_buffer(msgpool_sptr self, int port, long max_output_buffer)
+        """
+        return _howto_swig.msgpool_sptr_set_max_output_buffer(self, *args)
+
+
+    def min_output_buffer(self, i):
+        """min_output_buffer(msgpool_sptr self, int i) -> long"""
+        return _howto_swig.msgpool_sptr_min_output_buffer(self, i)
+
+
+    def set_min_output_buffer(self, *args):
+        """
+        set_min_output_buffer(msgpool_sptr self, long min_output_buffer)
+        set_min_output_buffer(msgpool_sptr self, int port, long min_output_buffer)
+        """
+        return _howto_swig.msgpool_sptr_set_min_output_buffer(self, *args)
+
+
+    def pc_noutput_items(self):
+        """pc_noutput_items(msgpool_sptr self) -> float"""
+        return _howto_swig.msgpool_sptr_pc_noutput_items(self)
+
+
+    def pc_noutput_items_avg(self):
+        """pc_noutput_items_avg(msgpool_sptr self) -> float"""
+        return _howto_swig.msgpool_sptr_pc_noutput_items_avg(self)
+
+
+    def pc_noutput_items_var(self):
+        """pc_noutput_items_var(msgpool_sptr self) -> float"""
+        return _howto_swig.msgpool_sptr_pc_noutput_items_var(self)
+
+
+    def pc_nproduced(self):
+        """pc_nproduced(msgpool_sptr self) -> float"""
+        return _howto_swig.msgpool_sptr_pc_nproduced(self)
+
+
+    def pc_nproduced_avg(self):
+        """pc_nproduced_avg(msgpool_sptr self) -> float"""
+        return _howto_swig.msgpool_sptr_pc_nproduced_avg(self)
+
+
+    def pc_nproduced_var(self):
+        """pc_nproduced_var(msgpool_sptr self) -> float"""
+        return _howto_swig.msgpool_sptr_pc_nproduced_var(self)
+
+
+    def pc_input_buffers_full(self, *args):
+        """
+        pc_input_buffers_full(msgpool_sptr self, int which) -> float
+        pc_input_buffers_full(msgpool_sptr self) -> pmt_vector_float
+        """
+        return _howto_swig.msgpool_sptr_pc_input_buffers_full(self, *args)
+
+
+    def pc_input_buffers_full_avg(self, *args):
+        """
+        pc_input_buffers_full_avg(msgpool_sptr self, int which) -> float
+        pc_input_buffers_full_avg(msgpool_sptr self) -> pmt_vector_float
+        """
+        return _howto_swig.msgpool_sptr_pc_input_buffers_full_avg(self, *args)
+
+
+    def pc_input_buffers_full_var(self, *args):
+        """
+        pc_input_buffers_full_var(msgpool_sptr self, int which) -> float
+        pc_input_buffers_full_var(msgpool_sptr self) -> pmt_vector_float
+        """
+        return _howto_swig.msgpool_sptr_pc_input_buffers_full_var(self, *args)
+
+
+    def pc_output_buffers_full(self, *args):
+        """
+        pc_output_buffers_full(msgpool_sptr self, int which) -> float
+        pc_output_buffers_full(msgpool_sptr self) -> pmt_vector_float
+        """
+        return _howto_swig.msgpool_sptr_pc_output_buffers_full(self, *args)
+
+
+    def pc_output_buffers_full_avg(self, *args):
+        """
+        pc_output_buffers_full_avg(msgpool_sptr self, int which) -> float
+        pc_output_buffers_full_avg(msgpool_sptr self) -> pmt_vector_float
+        """
+        return _howto_swig.msgpool_sptr_pc_output_buffers_full_avg(self, *args)
+
+
+    def pc_output_buffers_full_var(self, *args):
+        """
+        pc_output_buffers_full_var(msgpool_sptr self, int which) -> float
+        pc_output_buffers_full_var(msgpool_sptr self) -> pmt_vector_float
+        """
+        return _howto_swig.msgpool_sptr_pc_output_buffers_full_var(self, *args)
+
+
+    def pc_work_time(self):
+        """pc_work_time(msgpool_sptr self) -> float"""
+        return _howto_swig.msgpool_sptr_pc_work_time(self)
+
+
+    def pc_work_time_avg(self):
+        """pc_work_time_avg(msgpool_sptr self) -> float"""
+        return _howto_swig.msgpool_sptr_pc_work_time_avg(self)
+
+
+    def pc_work_time_var(self):
+        """pc_work_time_var(msgpool_sptr self) -> float"""
+        return _howto_swig.msgpool_sptr_pc_work_time_var(self)
+
+
+    def pc_work_time_total(self):
+        """pc_work_time_total(msgpool_sptr self) -> float"""
+        return _howto_swig.msgpool_sptr_pc_work_time_total(self)
+
+
+    def pc_throughput_avg(self):
+        """pc_throughput_avg(msgpool_sptr self) -> float"""
+        return _howto_swig.msgpool_sptr_pc_throughput_avg(self)
+
+
+    def set_processor_affinity(self, mask):
+        """set_processor_affinity(msgpool_sptr self, std::vector< int,std::allocator< int > > const & mask)"""
+        return _howto_swig.msgpool_sptr_set_processor_affinity(self, mask)
+
+
+    def unset_processor_affinity(self):
+        """unset_processor_affinity(msgpool_sptr self)"""
+        return _howto_swig.msgpool_sptr_unset_processor_affinity(self)
+
+
+    def processor_affinity(self):
+        """processor_affinity(msgpool_sptr self) -> std::vector< int,std::allocator< int > >"""
+        return _howto_swig.msgpool_sptr_processor_affinity(self)
+
+
+    def active_thread_priority(self):
+        """active_thread_priority(msgpool_sptr self) -> int"""
+        return _howto_swig.msgpool_sptr_active_thread_priority(self)
+
+
+    def thread_priority(self):
+        """thread_priority(msgpool_sptr self) -> int"""
+        return _howto_swig.msgpool_sptr_thread_priority(self)
+
+
+    def set_thread_priority(self, priority):
+        """set_thread_priority(msgpool_sptr self, int priority) -> int"""
+        return _howto_swig.msgpool_sptr_set_thread_priority(self, priority)
+
+
+    def name(self):
+        """name(msgpool_sptr self) -> std::string"""
+        return _howto_swig.msgpool_sptr_name(self)
+
+
+    def symbol_name(self):
+        """symbol_name(msgpool_sptr self) -> std::string"""
+        return _howto_swig.msgpool_sptr_symbol_name(self)
+
+
+    def input_signature(self):
+        """input_signature(msgpool_sptr self) -> io_signature_sptr"""
+        return _howto_swig.msgpool_sptr_input_signature(self)
+
+
+    def output_signature(self):
+        """output_signature(msgpool_sptr self) -> io_signature_sptr"""
+        return _howto_swig.msgpool_sptr_output_signature(self)
+
+
+    def unique_id(self):
+        """unique_id(msgpool_sptr self) -> long"""
+        return _howto_swig.msgpool_sptr_unique_id(self)
+
+
+    def to_basic_block(self):
+        """to_basic_block(msgpool_sptr self) -> basic_block_sptr"""
+        return _howto_swig.msgpool_sptr_to_basic_block(self)
+
+
+    def check_topology(self, ninputs, noutputs):
+        """check_topology(msgpool_sptr self, int ninputs, int noutputs) -> bool"""
+        return _howto_swig.msgpool_sptr_check_topology(self, ninputs, noutputs)
+
+
+    def alias(self):
+        """alias(msgpool_sptr self) -> std::string"""
+        return _howto_swig.msgpool_sptr_alias(self)
+
+
+    def set_block_alias(self, name):
+        """set_block_alias(msgpool_sptr self, std::string name)"""
+        return _howto_swig.msgpool_sptr_set_block_alias(self, name)
+
+
+    def _post(self, which_port, msg):
+        """_post(msgpool_sptr self, swig_int_ptr which_port, swig_int_ptr msg)"""
+        return _howto_swig.msgpool_sptr__post(self, which_port, msg)
+
+
+    def message_ports_in(self):
+        """message_ports_in(msgpool_sptr self) -> swig_int_ptr"""
+        return _howto_swig.msgpool_sptr_message_ports_in(self)
+
+
+    def message_ports_out(self):
+        """message_ports_out(msgpool_sptr self) -> swig_int_ptr"""
+        return _howto_swig.msgpool_sptr_message_ports_out(self)
+
+
+    def message_subscribers(self, which_port):
+        """message_subscribers(msgpool_sptr self, swig_int_ptr which_port) -> swig_int_ptr"""
+        return _howto_swig.msgpool_sptr_message_subscribers(self, which_port)
+
+msgpool_sptr_swigregister = _howto_swig.msgpool_sptr_swigregister
+msgpool_sptr_swigregister(msgpool_sptr)
+
+
+msgpool_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id())
+msgpool = msgpool.make;
+
 
 

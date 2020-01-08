@@ -4,6 +4,7 @@
 /usr/local/include/howto/rsencode.h
 /usr/local/include/howto/rsdecode.h
 /usr/local/include/howto/timehop.h
+/usr/local/include/howto/msgpool.h
 /usr/local/lib/libgnuradio-howto-1.0.0git.so.0.0.0
 /usr/local/lib/libgnuradio-howto-1.0.0git.so
 /usr/local/lib/libgnuradio-howto.so
@@ -21,6 +22,7 @@
 /usr/local/share/gnuradio/grc/blocks/howto_rsencode.xml
 /usr/local/share/gnuradio/grc/blocks/howto_rsdecode.xml
 /usr/local/share/gnuradio/grc/blocks/howto_timehop.xml
+/usr/local/share/gnuradio/grc/blocks/howto_msgpool.xml
 /usr/local/share/doc/gr-howto/xml/group__defs_8dox.xml
 /usr/local/share/doc/gr-howto/xml/rsencode__impl_8h.xml
 /usr/local/share/doc/gr-howto/xml/api_8h.xml

@@ -12,6 +12,7 @@
 #include "howto/rsencode.h"
 #include "howto/rsdecode.h"
 #include "howto/timehop.h"
+#include "howto/msgpool.h"
 %}
 
 
@@ -24,3 +25,5 @@ GR_SWIG_BLOCK_MAGIC2(howto, rsencode);
 GR_SWIG_BLOCK_MAGIC2(howto, rsdecode);
 %include "howto/timehop.h"
 GR_SWIG_BLOCK_MAGIC2(howto, timehop);
+%include "howto/msgpool.h"
+GR_SWIG_BLOCK_MAGIC2(howto, msgpool);

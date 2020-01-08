@@ -39,24 +39,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1">
+      <node id="5">
         <label>block</label>
       </node>
-      <node id="0">
+      <node id="4">
         <label>gr::howto::noneblock</label>
         <link refid="classgr_1_1howto_1_1noneblock"/>
-        <childnode refid="1" relation="public-inheritance">
+        <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="3">
+      <node id="7">
         <label>block</label>
       </node>
-      <node id="2">
+      <node id="6">
         <label>gr::howto::noneblock</label>
         <link refid="classgr_1_1howto_1_1noneblock"/>
-        <childnode refid="3" relation="public-inheritance">
+        <childnode refid="7" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
