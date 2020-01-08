@@ -101,9 +101,9 @@ namespace gr {
         throw std::invalid_argument("wrongs ----");
         return;
       }
-
+      Decode(src.data(),dst);
       //std::cout << "------------"<< (char*)dst << std::endl;
-      std::string s(rsdecode_impl::dst);
+      std::string s(dst,dst+msg_length);
       //std::cout << "------------"<< s << std::endl;
       pmt::pmt_t str0= pmt::string_to_symbol(s);
       message_port_pub(pmt::mp("out"),str0);
