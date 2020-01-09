@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classgr_1_1howto_1_1msgpool" kind="class"><name>gr::howto::msgpool</name>
+    <member refid="classgr_1_1howto_1_1msgpool_1ac797ba984d23c2a316199e3a91f9e8cd" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1howto_1_1msgpool_1a7e0e0b1aa0320895ea4e423f5d593d97" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1howto_1_1msgpool__impl" kind="class"><name>gr::howto::msgpool_impl</name>
+    <member refid="classgr_1_1howto_1_1msgpool__impl_1ad4973b5fc1d606851df6d648fbf6684f" kind="typedef"><name>Nodeptr</name></member>
+    <member refid="classgr_1_1howto_1_1msgpool__impl_1a61226ce36e18a3f9a656d1f5398364ac" kind="typedef"><name>MsgList</name></member>
+    <member refid="classgr_1_1howto_1_1msgpool__impl_1a9dea49f88693b361604646a3b0d872cb" kind="typedef"><name>MsgPool</name></member>
+    <member refid="classgr_1_1howto_1_1msgpool__impl_1a65d5bc2a68f4cabf6a1fb14c89b1eef1" kind="variable"><name>threshold_</name></member>
+    <member refid="classgr_1_1howto_1_1msgpool__impl_1a5f1021b59f863ebf8fb5d96f437d1cc1" kind="variable"><name>msgnum</name></member>
+    <member refid="classgr_1_1howto_1_1msgpool__impl_1a6099d107e35d8831184fb12377ca34e9" kind="variable"><name>msgpool_</name></member>
+    <member refid="classgr_1_1howto_1_1msgpool__impl_1a5683b02e7acf45b3b5f4e0e20ae4ea3f" kind="function"><name>msgpool_impl</name></member>
+    <member refid="classgr_1_1howto_1_1msgpool__impl_1a038776aac1c416835584ed69bf50141c" kind="function"><name>~msgpool_impl</name></member>
+    <member refid="classgr_1_1howto_1_1msgpool__impl_1aeaaedb324697a22dc900d88fd391a867" kind="function"><name>handle_fun</name></member>
+    <member refid="classgr_1_1howto_1_1msgpool__impl_1a5526438575e6ffcec0ffc401bd453952" kind="function"><name>insert_node</name></member>
+    <member refid="classgr_1_1howto_1_1msgpool__impl_1af72be4db4df6845736ee0dba74a0e60b" kind="function"><name>sendmsg</name></member>
+  </compound>
+  <compound refid="structgr_1_1howto_1_1Node" kind="struct"><name>gr::howto::Node</name>
+    <member refid="structgr_1_1howto_1_1Node_1aa4a2c934bd565b6e183639e44a3e5483" kind="variable"><name>key_</name></member>
+    <member refid="structgr_1_1howto_1_1Node_1a18a2c1cc07a511593b955b23827712f3" kind="variable"><name>data</name></member>
+    <member refid="structgr_1_1howto_1_1Node_1a57d7c0653b61d38d9008d437a8a01f99" kind="function"><name>Node</name></member>
+    <member refid="structgr_1_1howto_1_1Node_1a457cc90efc14cb8c2ad5646b21a21be5" kind="function"><name>~Node</name></member>
+  </compound>
+  <compound refid="classgr_1_1howto_1_1noneblock" kind="class"><name>gr::howto::noneblock</name>
+    <member refid="classgr_1_1howto_1_1noneblock_1a5af3dd22b0aebae6a6796a8c614dcd51" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1howto_1_1noneblock_1a55c90fc19c065ffd9c0c3ed6d8bd63fd" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1howto_1_1noneblock__impl" kind="class"><name>gr::howto::noneblock_impl</name>
+    <member refid="classgr_1_1howto_1_1noneblock__impl_1abda6245ce3ec384c4a1fe58e39a5f7a3" kind="function"><name>noneblock_impl</name></member>
+    <member refid="classgr_1_1howto_1_1noneblock__impl_1a0a8cd2b468bdb6feb2197d13279255b2" kind="function"><name>~noneblock_impl</name></member>
+    <member refid="classgr_1_1howto_1_1noneblock__impl_1a229a0a0b590eb45758d3e10cf824ac2b" kind="function"><name>handler</name></member>
+  </compound>
+  <compound refid="classgr_1_1howto_1_1rsdecode" kind="class"><name>gr::howto::rsdecode</name>
+    <member refid="classgr_1_1howto_1_1rsdecode_1a8e6d045d04b1adfc774a7e4ae498d5d6" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode_1a543615d9df6571fbb25f9717e714c591" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1howto_1_1rsdecode__impl" kind="class"><name>gr::howto::rsdecode_impl</name>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22" kind="enum"><name>POLY_ID</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22ae0bec4b533052fef401a0bb71f14e93d" kind="enumvalue"><name>ID_MSG_IN</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a62e5969281dc6ca96d7b0e8e6a9f596a" kind="enumvalue"><name>ID_MSG_OUT</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22ac831d011f7c2b8e57a15a3f36e08b25b" kind="enumvalue"><name>ID_GENERATOR</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a052d99f8b6f2d569c886754333e2975e" kind="enumvalue"><name>ID_TPOLY1</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22acf27f4f28b1bbdf40695421464152a1c" kind="enumvalue"><name>ID_TPOLY2</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a4774790c24f66db55d1f68093d09eef2" kind="enumvalue"><name>ID_MSG_E</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22ac03c34d9df031ee6842694525f66ba09" kind="enumvalue"><name>ID_TPOLY3</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22acff1c976aea0299b91963d3fe5b34077" kind="enumvalue"><name>ID_TPOLY4</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22af7144b7a58f826dae7b8358059f13c64" kind="enumvalue"><name>ID_SYNDROMES</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a6d5f4c6be7af6b5a264ec6441e33ac5c" kind="enumvalue"><name>ID_FORNEY</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a08fef3e1f63f3e9aa8da1cf236bf33bb" kind="enumvalue"><name>ID_ERASURES_LOC</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22ab4314c2ed7dbff7c7ff9aaa0480e9e06" kind="enumvalue"><name>ID_ERRORS_LOC</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22adfa5f1afb930274baa7b63d04a48aeac" kind="enumvalue"><name>ID_ERASURES</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a43530ee4082bb54dc7129261ea048feb" kind="enumvalue"><name>ID_ERRORS</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22ae07567447ec5e0fbc93f3b1e149f0225" kind="enumvalue"><name>ID_COEF_POS</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a53579260a3d027eec93c3c33a4c0ba22a39cbf4b07748591f523f8862e2436059" kind="enumvalue"><name>ID_ERR_EVAL</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a9c04f9845b30073ab67f0f6ac0cc70ec" kind="variable"><name>msg_length</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1abf8ee9c8bd6a2060924d45cd7aeae128" kind="variable"><name>ecc_length</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a90b2ee115ae2a4fa0bdaef8e2c7196cc" kind="variable"><name>src</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a55ef11f2def5ccb7ba761dc2a0783ae7" kind="variable"><name>dst</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a397569c0a315c7af132fea38374e82de" kind="variable"><name>memory</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a0cb77a981d5a4e4a3c77d74f448b172d" kind="variable"><name>polynoms</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a3c6b818709069b893c9ab240cdec9023" kind="function"><name>rsdecode_impl</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1aa8f3ada910407a455570d4ff8ca16936" kind="function"><name>~rsdecode_impl</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a8e9935e286d52a6347e9f193e1c17989" kind="function"><name>handle_fun</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a65202f82db0bd61da928492d2a3ee314" kind="function"><name>DecodeBlock</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1ac340cbfd2f85f827e93e5e4852f4b90a" kind="function"><name>CalcSyndromes</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1ab23d23488347a5ee4304f185d2fb1f94" kind="function"><name>CalcForneySyndromes</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1ab46cc856e9a8a36637417750c65d3768" kind="function"><name>FindErrorLocator</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1aa4b91e22c5141476cc78bc9bdf78bf4a" kind="function"><name>FindErrors</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a41b3acaec84aad7a9085dd0de5429eac" kind="function"><name>CorrectErrata</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a3356977c77d4ba093fa76d84c86d19a5" kind="function"><name>FindErrataLocator</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1a6258b3d3dbeac42f636d20bed6a94002" kind="function"><name>FindErrorEvaluator</name></member>
+    <member refid="classgr_1_1howto_1_1rsdecode__impl_1ac852fb3fdf333744b3c284ab3c9d4e0a" kind="function"><name>Decode</name></member>
+  </compound>
+  <compound refid="classgr_1_1howto_1_1rsencode" kind="class"><name>gr::howto::rsencode</name>
+    <member refid="classgr_1_1howto_1_1rsencode_1a1093513dd5717b5a1b7bc584a62f7130" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode_1ab4f2bbca9584e8c05ca570c6ac9be73a" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1howto_1_1rsencode__impl" kind="class"><name>gr::howto::rsencode_impl</name>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809a" kind="enum"><name>POLY_ID</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa4da36a6b01e1231807e10b4a20db5a7c" kind="enumvalue"><name>ID_MSG_IN</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa3054523e8fda610fd6860c34a237829b" kind="enumvalue"><name>ID_MSG_OUT</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa5c62c70a8e9569d76dc84fcfcd497b73" kind="enumvalue"><name>ID_GENERATOR</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aac158fac7264e5d202a3defac5a1c0d51" kind="enumvalue"><name>ID_TPOLY1</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa5d6eb34ebb7a04b19402f8f20cd6def4" kind="enumvalue"><name>ID_TPOLY2</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aabcd9b440b5206f43e6b587314c07fadb" kind="enumvalue"><name>ID_MSG_E</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa7676b414076bbdd4f701ac6427b74dc9" kind="enumvalue"><name>ID_TPOLY3</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa7323dad6c0fbd5ef63a2c221562008d4" kind="enumvalue"><name>ID_TPOLY4</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa24f6ce12b5ee1d659db4cc6772a0c11a" kind="enumvalue"><name>ID_SYNDROMES</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa97589f666d4ae0677505e8ee36793422" kind="enumvalue"><name>ID_FORNEY</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aade25db1872486ef3e531daa5e6ff54b0" kind="enumvalue"><name>ID_ERASURES_LOC</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aa076190aeedafc0c1293cc2d5f45e36b1" kind="enumvalue"><name>ID_ERRORS_LOC</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aafab8c25c57de3605c7afd108397a44f0" kind="enumvalue"><name>ID_ERASURE</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aaff8a1521bf3118617995652581e1d5ff" kind="enumvalue"><name>ID_ERRORS</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aaa2096d1c1886bd65a217c246a394bdaf" kind="enumvalue"><name>ID_COEF_POS</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a6e64b097362a4a54f5d988ec8494809aaeda5fa4f199925408521ebcb59777919" kind="enumvalue"><name>ID_ERR_EVAL</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a454671857a21078f451cfdc0766534d4" kind="variable"><name>msg_length</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1af123ca8510c82b8a0c312d3ebeb508b0" kind="variable"><name>ecc_length</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1ad71977eb95882838eb766eea176f0d61" kind="variable"><name>src</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a6a95535bc7f4a66e1b837133740da464" kind="variable"><name>dst</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a52c5c5836cb23a1c3b31814ed243e02d" kind="variable"><name>memory</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a3bc0065c7773d62da000c1fefeae57f0" kind="variable"><name>polynoms</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a504aac9a3e5e0d342e93e85e18a2ef15" kind="function"><name>rsencode_impl</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a42d65e24213923e76424705d1b3a090f" kind="function"><name>~rsencode_impl</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a036fd4242b48552cd241bd3532aeb0d1" kind="function"><name>handle_fun</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a8b090e7e31610201cc85fe2cbc73c7bb" kind="function"><name>Encode</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1ab8c8d351189c692a76d602fdf397505c" kind="function"><name>EncodeBlock</name></member>
+    <member refid="classgr_1_1howto_1_1rsencode__impl_1a41475e37dd3e1e642df4f1d7a8b933dc" kind="function"><name>GeneratorPoly</name></member>
+  </compound>
+  <compound refid="classgr_1_1howto_1_1timehop" kind="class"><name>gr::howto::timehop</name>
+    <member refid="classgr_1_1howto_1_1timehop_1ac5bfbfba891a5069b36a1db452dbc4bd" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1howto_1_1timehop_1aff851836f2c7a8a37d0297439ea03a0e" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1howto_1_1timehop__impl" kind="class"><name>gr::howto::timehop_impl</name>
+    <member refid="classgr_1_1howto_1_1timehop__impl_1a912010aa3850c68cf4241a9c584caeba" kind="variable"><name>bursts</name></member>
+    <member refid="classgr_1_1howto_1_1timehop__impl_1a05893d3baafc7ac21e7872ee9a29ea90" kind="variable"><name>re_msg</name></member>
+    <member refid="classgr_1_1howto_1_1timehop__impl_1ab5691602d13ca0e3d1d721906dbe6212" kind="variable"><name>times</name></member>
+    <member refid="classgr_1_1howto_1_1timehop__impl_1afeb4148d50e15001e8f477c5bd00a251" kind="function"><name>timehop_impl</name></member>
+    <member refid="classgr_1_1howto_1_1timehop__impl_1ad5eb6e21a2a2145f6455a4d25c30f2eb" kind="function"><name>~timehop_impl</name></member>
+    <member refid="classgr_1_1howto_1_1timehop__impl_1a8b4bc20c99a2fea4753cda4e5dbc591e" kind="function"><name>handle_fun</name></member>
+    <member refid="classgr_1_1howto_1_1timehop__impl_1af08045270aed51a78eafacc8ec93feb6" kind="function"><name>general_burst</name></member>
+    <member refid="classgr_1_1howto_1_1timehop__impl_1ab287ac0fe613a05f6acd3a95873edf5f" kind="function"><name>general_time</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1howto" kind="namespace"><name>gr::howto</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a7a9fda890b8e28fac667cbd66796f13b" kind="define"><name>HOWTO_API</name></member>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="msgpool_8h" kind="file"><name>msgpool.h</name>
+  </compound>
+  <compound refid="msgpool__impl_8h" kind="file"><name>msgpool_impl.h</name>
+  </compound>
+  <compound refid="noneblock_8h" kind="file"><name>noneblock.h</name>
+  </compound>
+  <compound refid="noneblock__impl_8h" kind="file"><name>noneblock_impl.h</name>
+  </compound>
+  <compound refid="rsdecode_8h" kind="file"><name>rsdecode.h</name>
+  </compound>
+  <compound refid="rsdecode__impl_8h" kind="file"><name>rsdecode_impl.h</name>
+    <member refid="rsdecode__impl_8h_1ab7c3a72061bf11c6e7220b86ed9126c8" kind="define"><name>MSG_CNT</name></member>
+    <member refid="rsdecode__impl_8h_1ae1182cdcd15ad5741a846f971aeb7f0a" kind="define"><name>POLY_CNT</name></member>
+  </compound>
+  <compound refid="rsencode_8h" kind="file"><name>rsencode.h</name>
+  </compound>
+  <compound refid="rsencode__impl_8h" kind="file"><name>rsencode_impl.h</name>
+    <member refid="rsencode__impl_8h_1ab7c3a72061bf11c6e7220b86ed9126c8" kind="define"><name>MSG_CNT</name></member>
+    <member refid="rsencode__impl_8h_1ae1182cdcd15ad5741a846f971aeb7f0a" kind="define"><name>POLY_CNT</name></member>
+  </compound>
+  <compound refid="timehop_8h" kind="file"><name>timehop.h</name>
+  </compound>
+  <compound refid="timehop__impl_8h" kind="file"><name>timehop_impl.h</name>
+  </compound>
+  <compound refid="utils_8h" kind="file"><name>utils.h</name>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_931aa87cbc005b1171acaaec17b62d81" kind="dir"><name>howto</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

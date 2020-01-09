@@ -90,6 +90,7 @@ namespace gr {
 
   void rsencode_impl::handle_fun(pmt::pmt_t msg) {
 
+
 		if(pmt::is_symbol(msg)) {
 			src = pmt::symbol_to_string(msg);
 		}
@@ -100,7 +101,6 @@ namespace gr {
 		}
 
 		rsencode_impl::Encode(src.data(),rsencode_impl::dst);
-
 		std::string mm(dst,dst+msg_length+ecc_length);
 		pmt::pmt_t s = pmt::string_to_symbol(mm);
 		//std::cout << "---------------dst:    " << dst << std::endl;

@@ -91,10 +91,11 @@ namespace gr {
     }
 
     void rsdecode_impl::handle_fun(pmt::pmt_t msg) {
+    
       if(pmt::is_symbol(msg)) {
 
+        
         src = pmt::symbol_to_string(msg);
-
       }
 
       else {

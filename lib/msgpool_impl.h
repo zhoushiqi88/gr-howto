@@ -22,15 +22,16 @@
 #define INCLUDED_HOWTO_MSGPOOL_IMPL_H
 
 #include <howto/msgpool.h>
+#include<unordered_map>
 
 namespace gr {
   namespace howto {
 
     struct Node{
-      uint8_t key_;
+      uint8_t revnum_;
       char* data;
-      Node(uint8_t key) : key_(key) {
-        data = new char[9];
+      Node() : revnum_(0) {
+        data = new char[243];
       }
       ~Node() {
         delete[] data;
@@ -45,8 +46,7 @@ namespace gr {
       ~msgpool_impl();
 
       using Nodeptr = std::shared_ptr<Node>;
-      using MsgList = std::list<Nodeptr>;
-      using MsgPool = std::vector<MsgList>;
+      using PacketMap = std::unordered_map<uint8_t,Nodeptr>;
 
       void handle_fun(pmt::pmt_t msg);
 
@@ -55,13 +55,10 @@ namespace gr {
       private:
       // Nothing to declare in this block.
       int threshold_;
-      int* msgnum;
-      MsgPool msgpool_;
+      PacketMap packetmap_;
 
-
-      void insert_node(uint8_t index,Nodeptr node);
-
-      void sendmsg(MsgList msglist);
+      int* cur_burst_num;
+      
 
       
     };

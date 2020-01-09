@@ -49,17 +49,8 @@ namespace gr {
 
       set_msg_handler(pmt::mp("in"),boost::bind(&msgpool_impl::handle_fun,this,_1));
 
-      msgnum = new int[8];
-      for(int i = 0;i < 8;i++) {
-        msgnum[i] = 0;
-      }
-
-      for(int i = 0;i < 8;i++) {
-        Nodeptr tmp = std::make_shared<Node>(0);
-        MsgList listtmp;
-        listtmp.push_back(tmp);
-        msgpool_.push_back(listtmp);
-      }
+      cur_burst_num = new int[255];
+      memset(cur_burst_num,0,255);
     }
 
     /*
@@ -67,58 +58,54 @@ namespace gr {
      */
     msgpool_impl::~msgpool_impl()
     {
+      delete[] cur_burst_num;
     }
 
     void 
     msgpool_impl::handle_fun(pmt::pmt_t msg) {
+
       uint8_t netnum;
       uint8_t burstnum;
-      Nodeptr tmp = std::make_shared<Node>(0);
+      uint8_t packetnum;
+      uint8_t recv;
+      uint8_t net_get = 224;
+      uint8_t burst_get = 31;
       std::string str = pmt::symbol_to_string(msg);
+      memcpy(&recv,&str[1],1);
+      netnum = recv & net_get;
+      if(netnum != 0) return;  //如果不是发给本机，丢弃
 
-      memcpy(&burstnum,&str[0],1);
-      memcpy(&netnum,&str[1],1);
-      tmp->key_ = burstnum;
-      memcpy(&(tmp->data),&str[2],9);
+      burstnum = recv & burst_get;
+      cur_burst_num[packetnum] = burstnum;
 
-      insert_node(netnum,tmp);
-
-    }
-
-    void 
-    msgpool_impl::insert_node(uint8_t index,Nodeptr node) {
-      auto it = msgpool_[index].begin();
-      it++;
-      while((*(*it)).key_ < node->key_ && it != msgpool_[index].end()) {
-        it++;
+      memcpy(&packetnum,&str[0],1);
+      if(burstnum < cur_burst_num[packetnum]) {
+        packetmap_[packetnum]->revnum_ = 0;
+      } //如果接收到新的包，就更新revnum,继续处理。
+      cur_burst_num[packetnum] = burstnum;
+      auto it = packetmap_.find(packetnum);
+      if(it == packetmap_.end()) {
+        Nodeptr tmp = std::make_shared<Node>();
+        tmp->revnum_ = 1;
+        memcpy(tmp->data+burstnum*9,&str[2],9);
+        packetmap_.insert({packetnum,tmp});
       }
-      msgpool_[index].insert(it,node);
-      msgnum[index]++;
+      else {
+        if(((*it).second)->revnum_ < 0) return; 
 
-      if(msgnum[index] >= threshold_) {
-        sendmsg(msgpool_[index]);
-        msgpool_[index].clear();
-        msgnum[index] = 0;
-      }
-    }
+        memcpy(((*it).second)->data+burstnum*9,&str[2],9);
+        ((*it).second)->revnum_++;
 
-    //组合以及发送数据
-    void msgpool_impl::sendmsg(MsgList msglist) {
-      std::string msgtmp(243,'a');
-      auto it = msglist.begin();
-      it++;
-      for(uint8_t i = 0;i < 27;i++) {
-        if(i == (*(*it)).key_) {
-          memcpy(&msgtmp[i*9],&((*(*it)).data),9);
+        if(((*it).second)->revnum_ >= 0)
+
+        if(((*it).second)->revnum_ >= threshold_) {
+          std::string str(((*it).second)->data,((*it).second)->data+243);
+          pmt::pmt_t ss = pmt::string_to_symbol(str);
+          message_port_pub(pmt::mp("out"),ss);
+          ((*it).second)->revnum_ = -1;
         }
       }
-
-      pmt::pmt_t ss = pmt::string_to_symbol(msgtmp);
-      message_port_pub(pmt::mp("out"),ss);
-      
     }
-
-
 
   } /* namespace howto */
 } /* namespace gr */

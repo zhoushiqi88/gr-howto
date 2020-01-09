@@ -41,9 +41,13 @@ namespace gr {
     timehop_impl::timehop_impl()
       : gr::block("timehop",
               gr::io_signature::make(0,0,0),
-              gr::io_signature::make(0,0,0))
+              gr::io_signature::make(0,0,0)),
+              packetnum_(0)
     {
-      
+      message_port_register_in(pmt::mp("in"));
+      message_port_register_out(pmt::mp("out"));
+
+      set_msg_handler(pmt::mp("in"),boost::bind(&timehop_impl::handle_fun,this,_1));
     }
 
     /*
@@ -55,6 +59,7 @@ namespace gr {
 
     void
     timehop_impl::handle_fun(pmt::pmt_t msg) {
+      packetnum_++;
       general_burst(msg);
       general_time();
       struct timespec t1;
@@ -72,14 +77,16 @@ namespace gr {
     timehop_impl::general_burst(pmt::pmt_t msg) {
       re_msg = pmt::symbol_to_string(msg);
       std::string tmp(11,'a');
+
       for(int i = 0;i < 27;i++) {
         uint8_t burst_num = i;
         uint8_t net_num = 0; //机器编号
-        memcpy(&tmp[0],&burst_num,1);
-        memcpy(&tmp[1],&net_num,1);
+        memcpy(&tmp[0],&packetnum_,1);
+        memcpy(&tmp[1],&burst_num,1);
         memcpy(&tmp[2],&re_msg[i*9],9);
         bursts.push_back(tmp);
       }
+      if(packetnum_ == 255) packetnum_ = 0;
     }
 
     void timehop_impl::general_time() {
