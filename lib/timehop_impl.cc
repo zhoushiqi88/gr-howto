@@ -29,25 +29,26 @@ namespace gr {
   namespace howto {
 
     timehop::sptr
-    timehop::make()
+    timehop::make(uint8_t netnum)
     {
       return gnuradio::get_initial_sptr
-        (new timehop_impl());
+        (new timehop_impl(netnum));
     }
 
     /*
      * The private constructor
      */
-    timehop_impl::timehop_impl()
+    timehop_impl::timehop_impl(uint8_t netnum)
       : gr::block("timehop",
               gr::io_signature::make(0,0,0),
               gr::io_signature::make(0,0,0)),
-              packetnum_(0)
+              packetnum_(0),netnum_(netnum)
     {
       message_port_register_in(pmt::mp("in"));
       message_port_register_out(pmt::mp("out"));
 
       set_msg_handler(pmt::mp("in"),boost::bind(&timehop_impl::handle_fun,this,_1));
+      netnum_ <<= 5;
     }
 
     /*
@@ -77,19 +78,20 @@ namespace gr {
     timehop_impl::general_burst(pmt::pmt_t msg) {
       re_msg = pmt::symbol_to_string(msg);
       std::string tmp(11,'a');
-
       for(int i = 0;i < 27;i++) {
         uint8_t burst_num = i;
-        uint8_t net_num = 0; //机器编号
+        uint8_t mixnum = burst_num;
+        mixnum |= netnum_;
         memcpy(&tmp[0],&packetnum_,1);
-        memcpy(&tmp[1],&burst_num,1);
+        memcpy(&tmp[1],&mixnum,1);
         memcpy(&tmp[2],&re_msg[i*9],9);
         bursts.push_back(tmp);
       }
       if(packetnum_ == 255) packetnum_ = 0;
     }
 
-    void timehop_impl::general_time() {
+    void 
+    timehop_impl::general_time() {
       std::random_device rd;
       std::mt19937 gen(rd());
       std::exponential_distribution<> d(1);

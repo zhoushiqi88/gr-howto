@@ -44,9 +44,10 @@ namespace gr {
       std::string re_msg;
       double times[28];
       uint8_t packetnum_;
+      uint8_t netnum_;
 
      public:
-      timehop_impl();
+      timehop_impl(uint8_t netnum);
       ~timehop_impl();
 
       // Where all the action really happens

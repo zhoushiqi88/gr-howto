@@ -42,7 +42,7 @@ namespace gr {
     {
 
      public:
-      msgpool_impl(int threshold);
+      msgpool_impl(int threshold,uint8_t netnum);
       ~msgpool_impl();
 
       using Nodeptr = std::shared_ptr<Node>;
@@ -56,7 +56,7 @@ namespace gr {
       // Nothing to declare in this block.
       int threshold_;
       PacketMap packetmap_;
-
+      uint8_t netnum_;
       int* cur_burst_num;
       
 

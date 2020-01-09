@@ -46,7 +46,7 @@ namespace gr {
        * class. howto::timehop::make is the public interface for
        * creating new instances.
        */
-      static sptr make();
+      static sptr make(uint8_t netnum);
     };
 
   } // namespace howto

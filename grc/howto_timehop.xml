@@ -4,17 +4,17 @@
   <key>howto_timehop</key>
   <category>[howto]</category>
   <import>import howto</import>
-  <make>howto.timehop()</make>
+  <make>howto.timehop($netnum)</make>
   <!-- Make one 'param' node for every Parameter you want settable from the GUI.
        Sub-nodes:
        * name
        * key (makes the value accessible as $keyname, e.g. in the make node)
-       * type 
+       * type -->
   <param>
-    <name>...</name>
-    <key>...</key>
-    <type>...</type>
-  </param> -->
+    <name>NETNUM</name>
+    <key>netnum</key>
+    <type>int</type>
+  </param>
 
   <!-- Make one 'sink' node per input. Sub-nodes:
        * name (an identifier for the GUI)

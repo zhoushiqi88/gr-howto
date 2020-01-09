@@ -29,20 +29,20 @@ namespace gr {
   namespace howto {
 
     msgpool::sptr
-    msgpool::make(int threshold)
+    msgpool::make(int threshold,uint8_t netnum)
     {
       return gnuradio::get_initial_sptr
-        (new msgpool_impl(threshold));
+        (new msgpool_impl(threshold,netnum));
     }
 
     /*
      * The private constructor
      */
-    msgpool_impl::msgpool_impl(int threshold)
+    msgpool_impl::msgpool_impl(int threshold,uint8_t netnum)
       : gr::block("msgpool",
               gr::io_signature::make(0,0,0),
               gr::io_signature::make(0,0,0)),
-              threshold_(threshold)
+              threshold_(threshold),netnum_(netnum)
     {
       message_port_register_in(pmt::mp("in"));
       message_port_register_out(pmt::mp("out"));
@@ -51,6 +51,8 @@ namespace gr {
 
       cur_burst_num = new int[255];
       memset(cur_burst_num,0,255);
+
+      netnum_ <<= 5;
     }
 
     /*
@@ -73,7 +75,8 @@ namespace gr {
       std::string str = pmt::symbol_to_string(msg);
       memcpy(&recv,&str[1],1);
       netnum = recv & net_get;
-      if(netnum != 0) return;  //如果不是发给本机，丢弃
+     // std::cout << netnum*1 << std::endl;
+      if(netnum != netnum_) return;  //如果不是发给本机，丢弃
 
       burstnum = recv & burst_get;
       cur_burst_num[packetnum] = burstnum;
@@ -81,7 +84,7 @@ namespace gr {
       memcpy(&packetnum,&str[0],1);
       if(burstnum < cur_burst_num[packetnum]) {
         packetmap_[packetnum]->revnum_ = 0;
-      } //如果接收到新的包，就更新revnum,继续处理。
+      }                                          //如果接收到新的包，就更新revnum,继续处理。
       cur_burst_num[packetnum] = burstnum;
       auto it = packetmap_.find(packetnum);
       if(it == packetmap_.end()) {
@@ -91,7 +94,7 @@ namespace gr {
         packetmap_.insert({packetnum,tmp});
       }
       else {
-        if(((*it).second)->revnum_ < 0) return; 
+        if(((*it).second)->revnum_ < 0) return; //如果受到一个已经发送的包的burst,就丢弃不理.
 
         memcpy(((*it).second)->data+burstnum*9,&str[2],9);
         ((*it).second)->revnum_++;

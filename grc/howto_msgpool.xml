@@ -4,7 +4,7 @@
   <key>howto_msgpool</key>
   <category>[howto]</category>
   <import>import howto</import>
-  <make>howto.msgpool($threshold)</make>
+  <make>howto.msgpool($threshold,$netnum)</make>
   <!-- Make one 'param' node for every Parameter you want settable from the GUI.
        Sub-nodes:
        * name
@@ -13,6 +13,12 @@
   <param>
     <name>THRESHOLD</name>
     <key>threshold</key>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>NETNUM</name>
+    <key>netnum</key>
     <type>int</type>
   </param>
 

@@ -46,7 +46,7 @@ namespace gr {
        * class. howto::msgpool::make is the public interface for
        * creating new instances.
        */
-      static sptr make(int threshold);
+      static sptr make(int threshold,uint8_t netnum);
     };
 
   } // namespace howto
